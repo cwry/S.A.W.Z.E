@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 83676884593a83c47b53aa5771857772
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: FullbodyController
+    100002: //RootNode
+    100004: hero_LP:ZBrush_defualt_group
+    100006: ikHandle1
+    100008: joint1
+    100010: joint2
+    100012: joint3
+    100014: joint33
+    100016: joint4
+    100018: joint5
+    100020: joint6
+    100022: joint7
+    100024: joint8
+    100026: L_Elbow
+    100028: L_firstknuckle
+    100030: L_Index1st
+    100032: L_Index2nd
+    100034: L_Index3rd
+    100036: L_IndexEnd
+    100038: L_Little1st
+    100040: L_Little2nd
+    100042: L_Little3rd
+    100044: L_LittleEnd
+    100046: L_Middleend
+    100048: L_Middleknuckle
+    100050: L_Middlemiddle
+    100052: L_Middlesecond
+    100054: L_Ring2ndKnuckle
+    100056: L_RingEndKnuckle
+    100058: L_Ringknuckle
+    100060: L_Shoulder
+    100062: L_Thumb1st
+    100064: L_Thumb2nd
+    100066: L_Thumb3rd
+    100068: L_ThumbEnd
+    100070: L_UpperArm
+    100072: L_Wrist
+    100074: nurbsCircle1
+    100076: nurbsCircle2
+    100078: nurbsCircle3
+    100080: nurbsCircle4
+    100082: nurbsCircle9
+    100084: R_Elbow
+    100086: R_firstknuckle
+    100088: R_Index1st
+    100090: R_Index2nd
+    100092: R_Index3rd
+    100094: R_IndexEnd
+    100096: R_Little1st
+    100098: R_Little2nd
+    100100: R_Little3rd
+    100102: R_LittleEnd
+    100104: R_Middleend
+    100106: R_Middleknuckle
+    100108: R_Middlemiddle
+    100110: R_Middlesecond
+    100112: R_Ring2ndKnuckle
+    100114: R_RingEndKnuckle
+    100116: R_Ringknuckle
+    100118: R_Shoulder
+    100120: R_Thumb1st
+    100122: R_Thumb2nd
+    100124: R_Thumb3rd
+    100126: R_ThumbEnd
+    100128: R_UpperArm
+    100130: R_Wrist
+    100132: wheelchair_LP:Group2
+    100134: wheelchair_LP:Group3
+    100136: wheelchair_LP:Group4
+    100138: wheelchair_LP:Group5
+    100140: wheelchair_LP:Group6
+    400000: FullbodyController
+    400002: //RootNode
+    400004: hero_LP:ZBrush_defualt_group
+    400006: ikHandle1
+    400008: joint1
+    400010: joint2
+    400012: joint3
+    400014: joint33
+    400016: joint4
+    400018: joint5
+    400020: joint6
+    400022: joint7
+    400024: joint8
+    400026: L_Elbow
+    400028: L_firstknuckle
+    400030: L_Index1st
+    400032: L_Index2nd
+    400034: L_Index3rd
+    400036: L_IndexEnd
+    400038: L_Little1st
+    400040: L_Little2nd
+    400042: L_Little3rd
+    400044: L_LittleEnd
+    400046: L_Middleend
+    400048: L_Middleknuckle
+    400050: L_Middlemiddle
+    400052: L_Middlesecond
+    400054: L_Ring2ndKnuckle
+    400056: L_RingEndKnuckle
+    400058: L_Ringknuckle
+    400060: L_Shoulder
+    400062: L_Thumb1st
+    400064: L_Thumb2nd
+    400066: L_Thumb3rd
+    400068: L_ThumbEnd
+    400070: L_UpperArm
+    400072: L_Wrist
+    400074: nurbsCircle1
+    400076: nurbsCircle2
+    400078: nurbsCircle3
+    400080: nurbsCircle4
+    400082: nurbsCircle9
+    400084: R_Elbow
+    400086: R_firstknuckle
+    400088: R_Index1st
+    400090: R_Index2nd
+    400092: R_Index3rd
+    400094: R_IndexEnd
+    400096: R_Little1st
+    400098: R_Little2nd
+    400100: R_Little3rd
+    400102: R_LittleEnd
+    400104: R_Middleend
+    400106: R_Middleknuckle
+    400108: R_Middlemiddle
+    400110: R_Middlesecond
+    400112: R_Ring2ndKnuckle
+    400114: R_RingEndKnuckle
+    400116: R_Ringknuckle
+    400118: R_Shoulder
+    400120: R_Thumb1st
+    400122: R_Thumb2nd
+    400124: R_Thumb3rd
+    400126: R_ThumbEnd
+    400128: R_UpperArm
+    400130: R_Wrist
+    400132: wheelchair_LP:Group2
+    400134: wheelchair_LP:Group3
+    400136: wheelchair_LP:Group4
+    400138: wheelchair_LP:Group5
+    400140: wheelchair_LP:Group6
+    2300000: wheelchair_LP:Group2
+    2300002: wheelchair_LP:Group3
+    2300004: wheelchair_LP:Group4
+    2300006: wheelchair_LP:Group5
+    2300008: wheelchair_LP:Group6
+    3300000: wheelchair_LP:Group2
+    3300002: wheelchair_LP:Group3
+    3300004: wheelchair_LP:Group4
+    3300006: wheelchair_LP:Group5
+    3300008: wheelchair_LP:Group6
+    4300000: hero_LP:ZBrush_defualt_group
+    4300002: wheelchair_LP:Group3
+    4300004: wheelchair_LP:Group4
+    4300006: wheelchair_LP:Group5
+    4300008: wheelchair_LP:Group6
+    4300010: wheelchair_LP:Group2
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: hero_LP:ZBrush_defualt_group
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 61
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hero_LP:ZBrush_defualt_group
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint33
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Index1st
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Index1st/L_Index2nd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Index1st/L_Index2nd/L_Index3rd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Index1st/L_Index2nd/L_Index3rd/L_IndexEnd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Little1st
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Little1st/L_Little2nd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Little1st/L_Little2nd/L_Little3rd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Little1st/L_Little2nd/L_Little3rd/L_LittleEnd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Middleknuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Middleknuckle/L_Middlemiddle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Middleknuckle/L_Middlemiddle/L_Middlesecond
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Middleknuckle/L_Middlemiddle/L_Middlesecond/L_Middleend
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Ringknuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Ringknuckle/L_firstknuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Ringknuckle/L_firstknuckle/L_Ring2ndKnuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Ringknuckle/L_firstknuckle/L_Ring2ndKnuckle/L_RingEndKnuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Thumb1st
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Thumb1st/L_Thumb2nd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Thumb1st/L_Thumb2nd/L_Thumb3rd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_Thumb1st/L_Thumb2nd/L_Thumb3rd/L_ThumbEnd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Index1st
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Index1st/R_Index2nd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Index1st/R_Index2nd/R_Index3rd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Index1st/R_Index2nd/R_Index3rd/R_IndexEnd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Little1st
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Little1st/R_Little2nd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Little1st/R_Little2nd/R_Little3rd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Little1st/R_Little2nd/R_Little3rd/R_LittleEnd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Middleknuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Middleknuckle/R_Middlemiddle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Middleknuckle/R_Middlemiddle/R_Middlesecond
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Middleknuckle/R_Middlemiddle/R_Middlesecond/R_Middleend
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Ringknuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Ringknuckle/R_firstknuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Ringknuckle/R_firstknuckle/R_Ring2ndKnuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Ringknuckle/R_firstknuckle/R_Ring2ndKnuckle/R_RingEndKnuckle
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Thumb1st
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Thumb1st/R_Thumb2nd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Thumb1st/R_Thumb2nd/R_Thumb3rd
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_Thumb1st/R_Thumb2nd/R_Thumb3rd/R_ThumbEnd
+        weight: 1
+      - path: nurbsCircle9
+        weight: 1
+      - path: nurbsCircle9/FullbodyController
+        weight: 1
+      - path: nurbsCircle9/nurbsCircle1
+        weight: 1
+      - path: nurbsCircle9/nurbsCircle2
+        weight: 1
+      - path: nurbsCircle9/nurbsCircle3
+        weight: 1
+      - path: nurbsCircle9/nurbsCircle4
+        weight: 1
+      - path: nurbsCircle9/wheelchair_LP:Group2
+        weight: 1
+      - path: wheelchair_LP:Group3
+        weight: 1
+      - path: wheelchair_LP:Group4
+        weight: 1
+      - path: wheelchair_LP:Group5
+        weight: 1
+      - path: wheelchair_LP:Group6
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

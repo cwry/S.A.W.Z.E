@@ -1,0 +1,406 @@
+fileFormatVersion: 2
+guid: b28617832d1479b45ab3411f5e25dedf
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Head
+    100002: Head_CTRL
+    100004: HeadTop
+    100006: Jaw
+    100008: L_Ankle
+    100010: L_Arm_CTRL
+    100012: L_Arm_IK
+    100014: L_Elbow
+    100016: L_Foot
+    100018: L_foot_CTRL
+    100020: L_IndexEnd
+    100022: L_IndexKnuckle
+    100024: L_IndexMiddleBone
+    100026: L_IndexSecondBone
+    100028: L_Knee
+    100030: L_Leg_IK
+    100032: L_LittleEnd
+    100034: L_LittleKnuckle
+    100036: L_LittleMiddleBone
+    100038: L_LittleSecondBone
+    100040: L_MiddleEnd
+    100042: L_MiddlerBone
+    100044: L_MiddlerKnuckle
+    100046: L_MiddleSecondBone
+    100048: L_RingEnd
+    100050: L_RingKnuckle
+    100052: L_RingMiddleBone
+    100054: L_RingScondBone
+    100056: L_Shoulder
+    100058: L_ThumbEnd
+    100060: L_ThumbKnuckle
+    100062: L_ThumbMiddleBone
+    100064: L_Toe
+    100066: L_UpperArm
+    100068: L_UpperLeg
+    100070: L_Wrist
+    100072: NeckBase
+    100074: NeckTop
+    100076: nurbsCircle1
+    100078: Pelvis1
+    100080: persp1
+    100082: R_Ankle
+    100084: R_Arm_CTRL
+    100086: R_Arm_IK
+    100088: R_Elbow
+    100090: R_Foot
+    100092: R_foot_CTRL
+    100094: R_IndexEnd
+    100096: R_IndexKnuckle
+    100098: R_IndexMiddleBone
+    100100: R_IndexSecondBone
+    100102: R_Knee
+    100104: R_Leg_IK
+    100106: R_LittleEnd
+    100108: R_LittleKnuckle
+    100110: R_LittleMiddleBone
+    100112: R_LittleSecondBone
+    100114: R_MiddleEnd
+    100116: R_MiddlerBone
+    100118: R_MiddlerKnuckle
+    100120: R_MiddleSecondBone
+    100122: R_RingEnd
+    100124: R_RingKnuckle
+    100126: R_RingMiddleBone
+    100128: R_RingScondBone
+    100130: R_Shoulder
+    100132: R_ThumbEnd
+    100134: R_ThumbKnuckle
+    100136: R_ThumbMiddleBone
+    100138: R_Toe
+    100140: R_UpperArm
+    100142: R_UpperLeg
+    100144: R_Wrist
+    100146: Spine1
+    100148: Spine2
+    100150: Spine3
+    100152: Spine4
+    100154: ZBrush_defualt_group1
+    100156: //RootNode
+    400000: Head
+    400002: Head_CTRL
+    400004: HeadTop
+    400006: Jaw
+    400008: L_Ankle
+    400010: L_Arm_CTRL
+    400012: L_Arm_IK
+    400014: L_Elbow
+    400016: L_Foot
+    400018: L_foot_CTRL
+    400020: L_IndexEnd
+    400022: L_IndexKnuckle
+    400024: L_IndexMiddleBone
+    400026: L_IndexSecondBone
+    400028: L_Knee
+    400030: L_Leg_IK
+    400032: L_LittleEnd
+    400034: L_LittleKnuckle
+    400036: L_LittleMiddleBone
+    400038: L_LittleSecondBone
+    400040: L_MiddleEnd
+    400042: L_MiddlerBone
+    400044: L_MiddlerKnuckle
+    400046: L_MiddleSecondBone
+    400048: L_RingEnd
+    400050: L_RingKnuckle
+    400052: L_RingMiddleBone
+    400054: L_RingScondBone
+    400056: L_Shoulder
+    400058: L_ThumbEnd
+    400060: L_ThumbKnuckle
+    400062: L_ThumbMiddleBone
+    400064: L_Toe
+    400066: L_UpperArm
+    400068: L_UpperLeg
+    400070: L_Wrist
+    400072: NeckBase
+    400074: NeckTop
+    400076: nurbsCircle1
+    400078: Pelvis1
+    400080: persp1
+    400082: R_Ankle
+    400084: R_Arm_CTRL
+    400086: R_Arm_IK
+    400088: R_Elbow
+    400090: R_Foot
+    400092: R_foot_CTRL
+    400094: R_IndexEnd
+    400096: R_IndexKnuckle
+    400098: R_IndexMiddleBone
+    400100: R_IndexSecondBone
+    400102: R_Knee
+    400104: R_Leg_IK
+    400106: R_LittleEnd
+    400108: R_LittleKnuckle
+    400110: R_LittleMiddleBone
+    400112: R_LittleSecondBone
+    400114: R_MiddleEnd
+    400116: R_MiddlerBone
+    400118: R_MiddlerKnuckle
+    400120: R_MiddleSecondBone
+    400122: R_RingEnd
+    400124: R_RingKnuckle
+    400126: R_RingMiddleBone
+    400128: R_RingScondBone
+    400130: R_Shoulder
+    400132: R_ThumbEnd
+    400134: R_ThumbKnuckle
+    400136: R_ThumbMiddleBone
+    400138: R_Toe
+    400140: R_UpperArm
+    400142: R_UpperLeg
+    400144: R_Wrist
+    400146: Spine1
+    400148: Spine2
+    400150: Spine3
+    400152: Spine4
+    400154: ZBrush_defualt_group1
+    400156: //RootNode
+    4300000: ZBrush_defualt_group1
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: ZBrush_defualt_group1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 160
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head_CTRL
+        weight: 1
+      - path: L_Arm_CTRL
+        weight: 1
+      - path: L_Arm_IK
+        weight: 1
+      - path: L_foot_CTRL
+        weight: 1
+      - path: L_Leg_IK
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: Pelvis1
+        weight: 1
+      - path: Pelvis1/L_UpperLeg
+        weight: 1
+      - path: Pelvis1/L_UpperLeg/L_Knee
+        weight: 1
+      - path: Pelvis1/L_UpperLeg/L_Knee/L_Ankle
+        weight: 1
+      - path: Pelvis1/L_UpperLeg/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Pelvis1/L_UpperLeg/L_Knee/L_Ankle/L_Foot/L_Toe
+        weight: 1
+      - path: Pelvis1/R_UpperLeg
+        weight: 1
+      - path: Pelvis1/R_UpperLeg/R_Knee
+        weight: 1
+      - path: Pelvis1/R_UpperLeg/R_Knee/R_Ankle
+        weight: 1
+      - path: Pelvis1/R_UpperLeg/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Pelvis1/R_UpperLeg/R_Knee/R_Ankle/R_Foot/R_Toe
+        weight: 1
+      - path: Pelvis1/Spine1
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_IndexKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_IndexKnuckle/L_IndexMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_IndexKnuckle/L_IndexMiddleBone/L_IndexSecondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_IndexKnuckle/L_IndexMiddleBone/L_IndexSecondBone/L_IndexEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_LittleKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_LittleKnuckle/L_LittleMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_LittleKnuckle/L_LittleMiddleBone/L_LittleSecondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_LittleKnuckle/L_LittleMiddleBone/L_LittleSecondBone/L_LittleEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_MiddlerKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_MiddlerKnuckle/L_MiddlerBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_MiddlerKnuckle/L_MiddlerBone/L_MiddleSecondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_MiddlerKnuckle/L_MiddlerBone/L_MiddleSecondBone/L_MiddleEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_RingKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_RingKnuckle/L_RingMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_RingKnuckle/L_RingMiddleBone/L_RingScondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_RingKnuckle/L_RingMiddleBone/L_RingScondBone/L_RingEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_ThumbKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_ThumbKnuckle/L_ThumbMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/L_Shoulder/L_UpperArm/L_Elbow/L_Wrist/L_ThumbKnuckle/L_ThumbMiddleBone/L_ThumbEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_IndexKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_IndexKnuckle/R_IndexMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_IndexKnuckle/R_IndexMiddleBone/R_IndexSecondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_IndexKnuckle/R_IndexMiddleBone/R_IndexSecondBone/R_IndexEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_LittleKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_LittleKnuckle/R_LittleMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_LittleKnuckle/R_LittleMiddleBone/R_LittleSecondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_LittleKnuckle/R_LittleMiddleBone/R_LittleSecondBone/R_LittleEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_MiddlerKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_MiddlerKnuckle/R_MiddlerBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_MiddlerKnuckle/R_MiddlerBone/R_MiddleSecondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_MiddlerKnuckle/R_MiddlerBone/R_MiddleSecondBone/R_MiddleEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_RingKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_RingKnuckle/R_RingMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_RingKnuckle/R_RingMiddleBone/R_RingScondBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_RingKnuckle/R_RingMiddleBone/R_RingScondBone/R_RingEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_ThumbKnuckle
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_ThumbKnuckle/R_ThumbMiddleBone
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/R_Shoulder/R_UpperArm/R_Elbow/R_Wrist/R_ThumbKnuckle/R_ThumbMiddleBone/R_ThumbEnd
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/Spine4
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/Spine4/NeckBase
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/Spine4/NeckBase/NeckTop
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/Spine4/NeckBase/NeckTop/Head
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/Spine4/NeckBase/NeckTop/Head/HeadTop
+        weight: 1
+      - path: Pelvis1/Spine1/Spine2/Spine3/Spine4/NeckBase/NeckTop/Jaw
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: R_Arm_CTRL
+        weight: 1
+      - path: R_Arm_IK
+        weight: 1
+      - path: R_foot_CTRL
+        weight: 1
+      - path: R_Leg_IK
+        weight: 1
+      - path: ZBrush_defualt_group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
