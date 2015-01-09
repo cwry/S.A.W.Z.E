@@ -66,13 +66,13 @@ function Awake(){
 	mmExitStyle.normal.background = mmExitTexture;
 	
 	arrowCollectibleTexture = Texture2D(1, 1);
-	arrowCollectibleTexture.SetPixel(0, 0, Color(0, 0, 1, 0.5));
+	arrowCollectibleTexture.SetPixel(0, 0, Color(0, 0, 1, 0.75));
 	arrowCollectibleTexture.Apply();
 	arrowCollectibleStyle = GUIStyle();
 	arrowCollectibleStyle.normal.background = arrowCollectibleTexture;
 	
 	arrowExitTexture = Texture2D(1, 1);
-	arrowExitTexture.SetPixel(0, 0, Color(0.5, 0, 0, 0.5));
+	arrowExitTexture.SetPixel(0, 0, Color(0.5, 0, 0, 0.75));
 	arrowExitTexture.Apply();
 	arrowExitStyle = GUIStyle();
 	arrowExitStyle.normal.background = arrowExitTexture;
@@ -160,7 +160,6 @@ function OnGUI(){
 		}
 
 		if(shouldDraw){
-			Debug.Log(pos);
 			GUI.Box(new Rect(pos.x - w * 0.5, Screen.height - pos.y - h * 0.5, w, h), GUIContent.none, arrowCollectibleStyle);
 		}
 	}
@@ -187,7 +186,6 @@ function OnGUI(){
 		}
 
 		if(shouldDraw){
-			Debug.Log(pos);
 			GUI.Box(new Rect(pos.x - w * 0.5, Screen.height - pos.y - h * 0.5, w, h), GUIContent.none, arrowExitStyle);
 		}
 	}
