@@ -1,0 +1,542 @@
+2015-01-12 17:03:34.8020|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+LibGit2Sharp.UnmergedIndexEntriesException: Cannot create a tree from a not fully merged index.
+   bei LibGit2Sharp.Core.Ensure.HandleError(Int32 result)
+   bei LibGit2Sharp.Core.Proxy.git_tree_create_fromindex(Index index)
+   bei LibGit2Sharp.Repository.Commit(String message, Signature author, Signature committer, CommitOptions options)
+   bei LibGit2Sharp.RepositoryExtensions.Commit(IRepository repository, String message, Signature author, CommitOptions options)
+   bei LibGit2Sharp.RepositoryExtensions.Commit(IRepository repository, String message, CommitOptions options)
+   bei GitHub.ExclusiveRepositoryConnection.<>c__DisplayClass1.<Commit>b__0()
+   bei System.Reactive.Linq.ObservableImpl.Defer`1.Eval()
+   bei System.Reactive.Linq.ObservableImpl.Defer`1._.Run()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Reactive.PlatformServices.ExceptionServicesImpl.Rethrow(Exception exception)
+   bei System.Reactive.ExceptionHelpers.ThrowIfNotNull(Exception exception)
+   bei System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   bei GitHub.Helpers.GitClient.<>c__DisplayClass27.<<CreateCommit>b__1e>d__30.MoveNext()
+2015-01-12 15:42:37.8083|INFO|thread: 1|CommandLineHandler|Parsing command line arguments:C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94\GitHub.exe
+2015-01-12 15:42:37.8083|INFO|thread: 1|AppInstanceCommunicator|Starting up as master instance of GitHub for Windows
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| #########################################
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| GitHub for Windows started. VERSION: 2.6.6.2
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| Build version: ea1880cdbcf4ad845816fd4de8ca77bfd383e7b7
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***************************************
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***                                 ***
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***                                 ***
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***        Have a problem?          ***
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***    Email support@github.com     ***
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***      and include this file      ***
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***                                 ***
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***                                 ***
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| ***************************************
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| OS Version: Windows 7 Service Pack 1 6.1.7601.65536 amd64
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| CLR Version: 4.0.30319.18444
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| Current culture: de-DE
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| Terminal Services session: no
+2015-01-12 15:42:37.8083|INFO|thread: 7|StartupLogging| Location: C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94\GitHub.exe
+2015-01-12 15:42:37.8283|INFO|thread: 7|StartupLogging| ActivationUri: https://github-windows.s3.amazonaws.com/GitHub.application
+2015-01-12 15:42:37.8283|INFO|thread: 1|HardwareRenderingHelper|Your video card appears to support hardware rendering. If this isn't the case and you see glitches
+2015-01-12 15:42:37.8283|INFO|thread: 1|HardwareRenderingHelper|set the GH_FORCE_SW_RENDERING environment variable to 1
+2015-01-12 15:42:37.8783|WARN|thread: 1|POCOObservableForProperty|ReactiveUI.ReactiveCommandSix`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:37.9183|INFO|thread: 7|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:42:37.9183|INFO|thread: 7|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files\TortoiseSVN\bin
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging| =====================================================
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging|  DIAGNOSTICS                                        |
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging| =====================================================
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging| Git Extracted: 'True:
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging| PortableGit Dir Exists: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad'
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging| Git Executable Exists: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe'
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging| ----------------------------------------------------
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogging| PATH: C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files\TortoiseSVN\bin
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogger|Proxy information: (None)
+2015-01-12 15:42:37.9183|INFO|thread: 7|StartupLogger|Couldn't fetch creds for proxy
+2015-01-12 15:42:37.9583|INFO|thread: 1|ClickOnceAppIconHelper|Updating registry with our application icon 'C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94\Images\App.ico'
+2015-01-12 15:42:38.0783|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2015-01-12 15:42:38.0783|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2015-01-12 15:42:38.0783|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2015-01-12 15:42:38.1383|INFO|thread: 7|PortablePackageManager|Already extracted PortableGit.7z, returning 100%
+2015-01-12 15:42:38.6083|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.DropRepositoryView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:38.6883|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.DashboardView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:38.7283|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.RepositoryCloneProgress is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:38.7783|INFO|thread: 1|GitExtractionVisualHelper|Portable Git is already extracted
+2015-01-12 15:42:38.7783|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.ShellViewModel.
+2015-01-12 15:42:38.7783|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.DashboardViewModel.
+2015-01-12 15:42:39.0383|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.SourceList is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.0783|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.SourceListRepositoryItem is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.1083|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.RepositoryNotFound is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.1183|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PopupMenuView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.1483|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.AddOrCreatePopup is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.1883|INFO|thread: 1|PortablePackageManager|Already extracted gitignore.7z, returning 100%
+2015-01-12 15:42:39.1883|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.CreateRepositoryTab is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.2283|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.BrowseRepositoriesTab is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.2483|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.BrowseRepositoriesList is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.3083|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.TwoFactorView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.3083|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.CertificateErrorView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.3383|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.UndoFlashView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.3983|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2015-01-12 15:42:39.3983|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2015-01-12 15:42:39.3983|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2015-01-12 15:42:39.4543|WARN|thread: 1|POCOObservableForProperty|GitHub.Validation.ReactivePropertyValidationResult is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.6003|WARN|thread: 1|POCOObservableForProperty|ReactiveUI.ReactiveCommandSix`1[[System.Reactive.Unit, System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]] is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.6953|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2015-01-12 15:42:39.6953|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2015-01-12 15:42:39.6953|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2015-01-12 15:42:39.8133|WARN|thread: 1|POCOObservableForProperty|ReactiveUI.ReactiveCommandSix`1[[GitHub.Models.ICommitModel, GitHub, Version=2.6.6.2, Culture=neutral, PublicKeyToken=null]] is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:39.8593|INFO|thread: 7|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:42:39.8933|INFO|thread: 7|RepositoryConnection|Loaded '5' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 15:42:40.0043|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2015-01-12 15:42:40.0293|INFO|thread: 7|AsyncReaderWriterLock|Acquiring concurrent lock for operation 1: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:42:40.0293|INFO|thread: 8|AsyncReaderWriterLock|Acquired concurrent lock for operation 1: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:42:40.0543|INFO|thread: 8|AsyncReaderWriterLock|Released concurrent lock for operation 1: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:42:40.1203|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.RepositoryView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.1393|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PublishToHostButton is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.1463|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.AheadBehindIndicator is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.1773|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.CommitForm is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.1983|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.NewCommitView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.2223|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PublishToHostPopup is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.2473|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PublishToHostTab is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.2763|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.GitHubLogin is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.3133|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.GitHubEnterpriseLogin is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.3423|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.BranchesPopup is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.3993|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent lock for operation 2: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:42:40.3993|INFO|thread: 8|AsyncReaderWriterLock|Acquired concurrent lock for operation 2: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:42:40.3993|INFO|thread:12|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:42:40.4103|INFO|thread:12|RepositoryConnection|Loaded '0' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 15:42:40.4103|INFO|thread: 8|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:42:40.4103|INFO|thread: 8|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:42:40.4103|INFO|thread: 8|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 15:42:40.4783|INFO|thread: 1|RepositoryHost|Log in from cache for login 'BonyMD' to host 'https://api.github.com/' SUCCEEDED
+2015-01-12 15:42:40.4993|INFO|thread:21|ApplicationShellInitializer|Running post login tasks. ~/.gitconfig is set up with user.name = 'BonyMD' and user.email = 'robert.luecke@games-academy.de'
+2015-01-12 15:42:40.5153|INFO|thread:21|SSHKeyHelper|ssh-agent already running
+2015-01-12 15:42:40.5183|INFO|thread:21|PortablePackageManager|Already extracted git-media-amd64.7z, returning 100%
+2015-01-12 15:42:40.5183|INFO|thread:13|AsyncReaderWriterLock|Released concurrent lock for operation 2: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:42:40.5183|INFO|thread:21|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:42:40.5183|INFO|thread:21|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:42:40.5183|INFO|thread:13|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:42:40.5183|INFO|thread:21|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\ssh-add.exe', Args: '"C:\Users\robert.luecke\.ssh\github_rsa"', Working Directory: C:\Users\robert.luecke\AppData\Local\Temp\
+2015-01-12 15:42:40.5183|INFO|thread:13|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 15:42:40.5693|INFO|thread: 7|SSHKeyHelper|Found existing SSH key pair
+2015-01-12 15:42:40.6273|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.WorkingDirectoryFileDiffView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.7283|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.CommitListItem is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:42:40.8973|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2015-01-12 15:42:40.8973|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2015-01-12 15:42:40.8973|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2015-01-12 15:42:40.9423|INFO|thread: 1|RepositoryViewModel|Created Shadow Backup for Repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E => 33d25afd2e45eb85a28cd525366ecccc19c731a8 in 414ms
+2015-01-12 15:42:41.1583|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 15:42:41.1583|INFO|thread:13|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 15:42:41.1583|INFO|thread:13|RepositoryConnection|branch stats: ahead 0, behind 0
+2015-01-12 15:42:41.1583|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts and running a full fetch.
+2015-01-12 15:42:41.1813|INFO|thread:12|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:42:41.1813|INFO|thread:12|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:42:41.1813|INFO|thread:12|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'fetch origin --prune ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 15:42:43.7703|INFO|thread: 7|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 15:42:43.7703|INFO|thread: 7|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 15:42:47.9353|INFO|thread: 7|SoftwareUpdateViewModel|Checking for new version
+2015-01-12 15:42:57.9623|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:42:57.9623|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:42:57.9623|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status c5e41402bfc5917d2a0ecb4e573cee2770d39894 ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:42:57.9623|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:42:57.9623|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:42:57.9623|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat c5e41402bfc5917d2a0ecb4e573cee2770d39894 ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:42:58.0073|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.CommitFileDiffView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2015-01-12 15:43:09.3793|INFO|thread:13|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:43:09.3943|INFO|thread:13|RepositoryConnection|Loaded '38' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 15:43:11.1803|INFO|thread: 8|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:43:11.1953|INFO|thread: 8|RepositoryConnection|Loaded '38' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 15:43:12.5023|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:43:12.5023|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:43:12.5023|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status 3643aca49614ff086043cfd3bb24ad7589725c3f ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:43:12.5023|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:43:12.5023|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:43:12.5023|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat 3643aca49614ff086043cfd3bb24ad7589725c3f ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:51:20.8434|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2015-01-12 15:51:20.8444|INFO|thread:27|AsyncReaderWriterLock|Acquiring concurrent lock for operation 3: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:51:20.8444|INFO|thread:28|AsyncReaderWriterLock|Acquired concurrent lock for operation 3: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:51:20.8854|INFO|thread:28|AsyncReaderWriterLock|Released concurrent lock for operation 3: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:51:20.8854|INFO|thread:27|AsyncReaderWriterLock|Acquiring concurrent lock for operation 4: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:51:20.8854|INFO|thread:27|AsyncReaderWriterLock|Acquired concurrent lock for operation 4: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:51:20.8854|INFO|thread:28|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:51:20.8974|INFO|thread:27|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:51:20.8974|INFO|thread:27|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:51:20.8974|INFO|thread:27|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 15:51:20.8974|INFO|thread:28|RepositoryConnection|Loaded '0' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 15:51:20.9424|INFO|thread:30|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 15:51:20.9424|INFO|thread:30|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 15:51:20.9544|INFO|thread:28|AsyncReaderWriterLock|Released concurrent lock for operation 4: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 15:51:21.0684|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 15:51:21.0784|INFO|thread:27|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 15:51:21.0784|INFO|thread:27|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 15:51:21.0784|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts and running a full fetch.
+2015-01-12 15:51:21.0784|INFO|thread:29|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 15:51:21.0784|INFO|thread:29|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 15:51:21.0784|INFO|thread:29|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'fetch origin --prune ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 15:51:21.8234|INFO|thread:28|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 15:51:21.8234|INFO|thread:28|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 16:29:28.7878|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2015-01-12 16:29:28.7878|INFO|thread:24|AsyncReaderWriterLock|Acquiring concurrent lock for operation 5: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:29:28.7878|INFO|thread:24|AsyncReaderWriterLock|Acquired concurrent lock for operation 5: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:29:28.8068|INFO|thread:24|AsyncReaderWriterLock|Released concurrent lock for operation 5: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:29:28.8068|INFO|thread:28|AsyncReaderWriterLock|Acquiring concurrent lock for operation 6: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:29:28.8068|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent lock for operation 6: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:29:28.8068|INFO|thread:24|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 16:29:28.8158|INFO|thread:18|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 16:29:28.8158|INFO|thread:18|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 16:29:28.8158|INFO|thread:18|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 16:29:28.8158|INFO|thread:24|RepositoryConnection|Loaded '0' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 16:29:28.8568|INFO|thread:29|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 16:29:28.8648|INFO|thread:29|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 16:29:28.8648|INFO|thread:24|AsyncReaderWriterLock|Released concurrent lock for operation 6: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:29:28.9618|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 16:29:28.9618|INFO|thread:18|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 16:29:28.9618|INFO|thread:18|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 16:29:28.9618|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts and running a full fetch.
+2015-01-12 16:29:28.9798|INFO|thread:32|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 16:29:28.9798|INFO|thread:32|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 16:29:28.9798|INFO|thread:32|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'fetch origin --prune ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 16:29:29.0618|INFO|thread: 1|RepositoryViewModel|Created Shadow Backup for Repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E => 017afa9725bd5182a03effc7b1bbcca9a602bfe5 in 195ms
+2015-01-12 16:29:29.7448|INFO|thread:31|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 16:29:29.7448|INFO|thread:31|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 16:51:47.4752|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2015-01-12 16:51:47.4752|INFO|thread:39|AsyncReaderWriterLock|Acquiring concurrent lock for operation 7: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:51:47.4752|INFO|thread:39|AsyncReaderWriterLock|Acquired concurrent lock for operation 7: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:51:47.5092|INFO|thread:39|AsyncReaderWriterLock|Released concurrent lock for operation 7: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:51:47.5092|INFO|thread:41|AsyncReaderWriterLock|Acquiring concurrent lock for operation 8: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:51:47.5092|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent lock for operation 8: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:51:47.5092|INFO|thread:42|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 16:51:47.5212|INFO|thread:42|RepositoryConnection|Loaded '0' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 16:51:47.5212|INFO|thread:39|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 16:51:47.5212|INFO|thread:41|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 16:51:47.5212|INFO|thread:41|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 16:51:47.5212|INFO|thread:41|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 16:51:47.5212|INFO|thread:39|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 16:51:47.5762|INFO|thread:43|AsyncReaderWriterLock|Released concurrent lock for operation 8: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 16:51:47.6452|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 16:51:47.6452|INFO|thread:41|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 16:51:47.6452|INFO|thread:41|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 16:51:47.6452|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts and running a full fetch.
+2015-01-12 16:51:47.6602|INFO|thread:42|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 16:51:47.6602|INFO|thread:42|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 16:51:47.6602|INFO|thread:42|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'fetch origin --prune ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 16:51:48.4182|INFO|thread:41|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 16:51:48.4182|INFO|thread:41|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 17:01:25.0144|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2015-01-12 17:01:25.0244|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent lock for operation 9: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:01:25.0244|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent lock for operation 9: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:01:25.0544|INFO|thread:36|AsyncReaderWriterLock|Released concurrent lock for operation 9: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:01:25.0544|INFO|thread:37|AsyncReaderWriterLock|Acquiring concurrent lock for operation 10: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:01:25.0544|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent lock for operation 10: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:01:25.0544|INFO|thread:34|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:01:25.0554|INFO|thread:38|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:01:25.0554|INFO|thread:38|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:01:25.0554|INFO|thread:38|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:01:25.0554|INFO|thread:34|RepositoryConnection|Loaded '0' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:01:25.0554|INFO|thread:33|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:01:25.0674|INFO|thread:33|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:01:25.1164|INFO|thread:34|AsyncReaderWriterLock|Released concurrent lock for operation 10: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:01:25.1874|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 17:01:25.1874|INFO|thread:36|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 17:01:25.1874|INFO|thread:36|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 17:01:25.1874|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts and running a full fetch.
+2015-01-12 17:01:25.2034|INFO|thread:37|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:01:25.2034|INFO|thread:37|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:01:25.2034|INFO|thread:37|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'fetch origin --prune ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:01:25.3044|INFO|thread: 1|RepositoryViewModel|Created Shadow Backup for Repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E => 091d81af89d212b402d9c2d8ea482e4bf6c37e45 in 189ms
+2015-01-12 17:01:25.9754|INFO|thread:37|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 17:01:25.9754|INFO|thread:37|RepositoryConnection|branch stats: ahead 0, behind 1
+2015-01-12 17:02:24.5704|INFO|thread:33|AsyncReaderWriterLock|Acquiring exclusive lock for operation 11: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:24.5704|INFO|thread:38|AsyncReaderWriterLock|Acquired exclusive lock for operation 11: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:24.6044|INFO|thread:38|ExclusiveRepositoryConnection|Creating Commit
+2015-01-12 17:02:24.9143|INFO|thread:38|ExclusiveRepositoryConnection|Creating new commit with 31 file(s). LvL_02_Fundament
+
+Die Basis des zweiten Levels steht. Es fehlen nurnoch Wohnungen,
+Zombies, Bonbons, Powerups und Player
+
+Anmerkung für mich: Matrix, Bürolevel
+
+2015-01-12 17:02:24.9743|INFO|thread:38|AsyncReaderWriterLock|Released exclusive lock for operation 11: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:24.9943|INFO|thread:33|AsyncReaderWriterLock|Acquiring concurrent lock for operation 12: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:24.9943|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent lock for operation 12: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:24.9943|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 17:02:24.9943|INFO|thread:33|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:24.9943|INFO|thread:33|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:24.9943|INFO|thread:33|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:02:24.9943|INFO|thread:34|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 17:02:24.9943|INFO|thread:34|RepositoryConnection|branch stats: ahead 1, behind 1
+2015-01-12 17:02:25.0343|INFO|thread:32|AsyncReaderWriterLock|Released concurrent lock for operation 12: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:25.0543|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:25.0543|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:25.0543|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status e7dbeea4f166f6cddd964721f0ea8b0695c2a082 ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:02:25.0543|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:25.0543|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:25.0543|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat e7dbeea4f166f6cddd964721f0ea8b0695c2a082 ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:02:35.2953|INFO|thread: 1|RepositoryHost|Log in from cache for login 'BonyMD' to host 'https://api.github.com/' SUCCEEDED
+2015-01-12 17:02:35.2953|INFO|thread: 1|SyncButtonViewModel|Starting sync for C:\Users\robert.luecke\Desktop\S.A.W.Z.E - master
+2015-01-12 17:02:35.2953|INFO|thread: 1|GitClient|Sync has latest unpublished commit SHA: 'bf049a27ea4b3415d26c7a5a08c5c78d6e9f7fd9'
+2015-01-12 17:02:35.2953|INFO|thread:37|AsyncReaderWriterLock|Acquiring exclusive lock for operation 13: 'SyncBranch' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:35.2953|INFO|thread:32|AsyncReaderWriterLock|Acquired exclusive lock for operation 13: 'SyncBranch' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:35.3133|INFO|thread:32|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:35.3133|INFO|thread:32|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:35.3133|INFO|thread:32|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'pull --progress --rebase --prune origin master ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:02:38.8243|INFO|thread:49|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:38.8243|INFO|thread:49|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:38.8243|INFO|thread:49|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'rebase --abort ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:02:39.2583|INFO|thread:44|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:39.2583|INFO|thread:44|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:39.2583|INFO|thread:44|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'merge origin/master ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:02:39.5263|INFO|thread:30|AsyncReaderWriterLock|Released exclusive lock for operation 13: 'SyncBranch' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:39.5493|WARN|thread: 1|StandardUserErrors|Showing user error Please resolve all conflicted files, commit, then try syncing again.
+GitHub.Helpers.MergeConflictsGitException: warning: Cannot merge binary files: SAWZE/Library/guidmapper (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/expandedItems (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/assetDatabase3 (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/CurrentMaximizeLayout.dwlt (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/CurrentLayout.dwlt (HEAD vs. origin/master)
+Removing SAWZE_Documentation/Last Mile/.~lock.SAWZE_priority_plan.xlsx#
+Auto-merging SAWZE/SAWZE.sln
+CONFLICT (content): Merge conflict in SAWZE/SAWZE.sln
+Auto-merging SAWZE/SAWZE-csharp.sln
+CONFLICT (content): Merge conflict in SAWZE/SAWZE-csharp.sln
+Auto-merging SAWZE/Library/shadercompiler-1.log
+CONFLICT (content): Merge conflict in SAWZE/Library/shadercompiler-1.log
+Auto-merging SAWZE/Library/guidmapper
+CONFLICT (content): Merge conflict in SAWZE/Library/guidmapper
+Auto-merging SAWZE/Library/expandedItems
+CONFLICT (content): Merge conflict in SAWZE/Library/expandedItems
+Auto-merging SAWZE/Library/assetDatabase3
+CONFLICT (content): Merge conflict in SAWZE/Library/assetDatabase3
+Auto-merging SAWZE/Library/CurrentMaximizeLayout.dwlt
+CONFLICT (content): Merge conflict in SAWZE/Library/CurrentMaximizeLayout.dwlt
+Auto-merging SAWZE/Library/CurrentLayout.dwlt
+CONFLICT (content): Merge conflict in SAWZE/Library/CurrentLayout.dwlt
+Automatic merge failed; fix conflicts and then commit the result. ---> GitHub.IO.ProcessException: warning: Cannot merge binary files: SAWZE/Library/guidmapper (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/expandedItems (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/assetDatabase3 (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/CurrentMaximizeLayout.dwlt (HEAD vs. origin/master)
+warning: Cannot merge binary files: SAWZE/Library/CurrentLayout.dwlt (HEAD vs. origin/master)
+Removing SAWZE_Documentation/Last Mile/.~lock.SAWZE_priority_plan.xlsx#
+Auto-merging SAWZE/SAWZE.sln
+CONFLICT (content): Merge conflict in SAWZE/SAWZE.sln
+Auto-merging SAWZE/SAWZE-csharp.sln
+CONFLICT (content): Merge conflict in SAWZE/SAWZE-csharp.sln
+Auto-merging SAWZE/Library/shadercompiler-1.log
+CONFLICT (content): Merge conflict in SAWZE/Library/shadercompiler-1.log
+Auto-merging SAWZE/Library/guidmapper
+CONFLICT (content): Merge conflict in SAWZE/Library/guidmapper
+Auto-merging SAWZE/Library/expandedItems
+CONFLICT (content): Merge conflict in SAWZE/Library/expandedItems
+Auto-merging SAWZE/Library/assetDatabase3
+CONFLICT (content): Merge conflict in SAWZE/Library/assetDatabase3
+Auto-merging SAWZE/Library/CurrentMaximizeLayout.dwlt
+CONFLICT (content): Merge conflict in SAWZE/Library/CurrentMaximizeLayout.dwlt
+Auto-merging SAWZE/Library/CurrentLayout.dwlt
+CONFLICT (content): Merge conflict in SAWZE/Library/CurrentLayout.dwlt
+Automatic merge failed; fix conflicts and then commit the result.
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei System.Reactive.PlatformServices.ExceptionServicesImpl.Rethrow(Exception exception)
+   bei System.Reactive.ExceptionHelpers.ThrowIfNotNull(Exception exception)
+   bei System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   bei GitHub.Helpers.GitClient.<>c__DisplayClass11c.<<SyncBranch>b__117>d__123.MoveNext()
+2015-01-12 17:02:43.1633|INFO|thread: 1|SyncButtonViewModel|Completing sync for C:\Users\robert.luecke\Desktop\S.A.W.Z.E - master
+2015-01-12 17:02:43.1633|INFO|thread:38|AsyncReaderWriterLock|Acquiring concurrent lock for operation 14: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:43.1633|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent lock for operation 14: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:43.1833|INFO|thread:44|AsyncReaderWriterLock|Acquiring concurrent lock for operation 15: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:43.1833|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent lock for operation 15: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:43.2003|INFO|thread:38|AsyncReaderWriterLock|Released concurrent lock for operation 14: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:43.2003|INFO|thread:48|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:02:43.2003|INFO|thread:45|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:43.2003|INFO|thread:45|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:43.2003|INFO|thread:45|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:02:43.2003|INFO|thread:48|RepositoryConnection|Loaded '1' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:02:43.2143|INFO|thread:49|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:02:43.2143|INFO|thread:49|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:02:43.3133|INFO|thread:33|AsyncReaderWriterLock|Released concurrent lock for operation 15: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:43.8473|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 17:02:43.8543|INFO|thread:44|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 17:02:43.8543|INFO|thread:44|RepositoryConnection|branch stats: ahead 1, behind 1
+2015-01-12 17:02:53.6832|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2015-01-12 17:02:53.6832|INFO|thread:34|AsyncReaderWriterLock|Acquiring concurrent lock for operation 16: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.6832|INFO|thread:47|AsyncReaderWriterLock|Acquired concurrent lock for operation 16: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.7162|INFO|thread:47|AsyncReaderWriterLock|Released concurrent lock for operation 16: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.7162|INFO|thread:45|AsyncReaderWriterLock|Acquiring concurrent lock for operation 17: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.7162|INFO|thread:46|AsyncReaderWriterLock|Acquired concurrent lock for operation 17: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.7162|INFO|thread:37|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:02:53.7312|INFO|thread:34|AsyncReaderWriterLock|Acquiring exclusive lock for operation 18: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.7312|INFO|thread:46|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:02:53.7312|INFO|thread:46|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:02:53.7312|INFO|thread:46|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:02:53.7312|INFO|thread:37|RepositoryConnection|Loaded '1' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:02:53.7312|INFO|thread:34|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:02:53.7452|INFO|thread:34|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:02:53.8072|INFO|thread:33|AsyncReaderWriterLock|Released concurrent lock for operation 17: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.8072|INFO|thread:45|AsyncReaderWriterLock|Acquired exclusive lock for operation 18: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.8262|INFO|thread:45|ExclusiveRepositoryConnection|Creating Commit
+2015-01-12 17:02:53.9092|INFO|thread:45|ExclusiveRepositoryConnection|Creating new commit with 45 file(s). Merge remote-tracking branch 'origin/master'
+
+Conflicts:
+	SAWZE/Library/CurrentLayout.dwlt
+	SAWZE/Library/CurrentMaximizeLayout.dwlt
+	SAWZE/Library/assetDatabase3
+	SAWZE/Library/expandedItems
+	SAWZE/Library/guidmapper
+	SAWZE/Library/shadercompiler-1.log
+	SAWZE/SAWZE-csharp.sln
+	SAWZE/SAWZE.sln
+
+2015-01-12 17:02:53.9172|INFO|thread:45|AsyncReaderWriterLock|Released exclusive lock for operation 18: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:02:53.9172|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+LibGit2Sharp.UnmergedIndexEntriesException: Cannot create a tree from a not fully merged index.
+   bei LibGit2Sharp.Core.Ensure.HandleError(Int32 result)
+   bei LibGit2Sharp.Core.Proxy.git_tree_create_fromindex(Index index)
+   bei LibGit2Sharp.Repository.Commit(String message, Signature author, Signature committer, CommitOptions options)
+   bei LibGit2Sharp.RepositoryExtensions.Commit(IRepository repository, String message, Signature author, CommitOptions options)
+   bei LibGit2Sharp.RepositoryExtensions.Commit(IRepository repository, String message, CommitOptions options)
+   bei GitHub.ExclusiveRepositoryConnection.<>c__DisplayClass1.<Commit>b__0()
+   bei System.Reactive.Linq.ObservableImpl.Defer`1.Eval()
+   bei System.Reactive.Linq.ObservableImpl.Defer`1._.Run()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Reactive.PlatformServices.ExceptionServicesImpl.Rethrow(Exception exception)
+   bei System.Reactive.ExceptionHelpers.ThrowIfNotNull(Exception exception)
+   bei System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   bei GitHub.Helpers.GitClient.<>c__DisplayClass27.<<CreateCommit>b__1e>d__30.MoveNext()
+2015-01-12 17:02:53.9822|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 17:02:53.9822|INFO|thread:49|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 17:02:53.9822|INFO|thread:49|RepositoryConnection|branch stats: ahead 1, behind 1
+2015-01-12 17:03:00.6362|INFO|thread: 1|RepositoryHost|Log in from cache for login 'BonyMD' to host 'https://api.github.com/' SUCCEEDED
+2015-01-12 17:03:00.6372|INFO|thread: 1|SyncButtonViewModel|Starting sync for C:\Users\robert.luecke\Desktop\S.A.W.Z.E - master
+2015-01-12 17:03:00.6372|INFO|thread: 1|GitClient|Sync has latest unpublished commit SHA: 'bf049a27ea4b3415d26c7a5a08c5c78d6e9f7fd9'
+2015-01-12 17:03:00.6372|INFO|thread:44|AsyncReaderWriterLock|Acquiring exclusive lock for operation 19: 'SyncBranch' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:00.6372|INFO|thread:46|AsyncReaderWriterLock|Acquired exclusive lock for operation 19: 'SyncBranch' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:00.6372|INFO|thread:46|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:03:00.6372|INFO|thread:46|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:03:00.6372|INFO|thread:46|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'pull --progress --rebase --prune origin master ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:03:00.8132|INFO|thread:38|AsyncReaderWriterLock|Released exclusive lock for operation 19: 'SyncBranch' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:00.8132|WARN|thread: 1|StandardUserErrors|Showing user error It appears that you are in the middle of a merge conflict. Open the Git Shell and resolve the conflicts in your working directory before attempting to sync again.
+GitHub.IO.ProcessException: A	SAWZE/Assets/Materials/FloorParkettMaterial_slow.mat
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow.mat.meta
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_3.mat
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_3.mat.meta
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_4.mat
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_4.mat.meta
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_5.mat
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_5.mat.meta
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_6.mat
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_6.mat.meta
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_7.mat
+A	SAWZE/Assets/Materials/FloorParkettMaterial_slow_7.mat.meta
+A	SAWZE/Assets/Materials/FloorParkettmaterial_slow_2.mat
+A	SAWZE/Assets/Materials/FloorParkettmaterial_slow_2.mat.meta
+M	SAWZE/Assets/Scenes/TEST_SCENE_Amon.unity
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow.png
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow.png.meta
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_2.png
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_2.png.meta
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_3.png
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_3.png.meta
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_4.png
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_4.png.meta
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_5.png
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_5.png.meta
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_6.png
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_6.png.meta
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_7.png
+A	SAWZE/Assets/Textures/Floor/floor_parkett_slow_7.png.meta
+U	SAWZE/Library/CurrentLayout.dwlt
+U	SAWZE/Library/CurrentMaximizeLayout.dwlt
+U	SAWZE/Library/assetDatabase3
+U	SAWZE/Library/expandedItems
+U	SAWZE/Library/guidmapper
+A	SAWZE/Library/metadata/06/065042006cc48b94cb5a2f6e452519a7
+A	SAWZE/Library/metadata/12/1242c5823f919d549a68675eadc96882
+A	SAWZE/Library/metadata/23/23da2fae805e58c42a9fa04af2f5226c
+A	SAWZE/Library/metadata/26/2641a6471bc0d034e9a3d29e26e201d7
+A	SAWZE/Library/metadata/4c/4cec4ca8016541f4b992e6b3a746ccf5
+A	SAWZE/Library/metadata/60/6015bff62a784754cb2cb3865b9e1783
+A	SAWZE/Library/metadata/7b/7b91f47129344a24aaabca2adc8b9866
+A	SAWZE/Library/metadata/8c/8ca69c819749edc43b8ca4524d272752
+A	SAWZE/Library/metadata/a6/a6fdc6fdcc68421458e310eab4143991
+A	SAWZE/Library/metadata/a7/a78cb4a36294269438931b681858d4b8
+A	SAWZE/Library/metadata/c5/c564ec321624592409a80c42f74fb2a3
+A	SAWZE/Library/metadata/ce/ce057a4c8ff44384ebc9e2c92ece565c
+A	SAWZE/Library/metadata/e1/e138d625d422586429f8668b4d983cf5
+A	SAWZE/Library/metadata/f2/f28042bad110cd4498b87679321b99b1
+U	SAWZE/Library/shadercompiler-1.log
+U	SAWZE/SAWZE-csharp.sln
+U	SAWZE/SAWZE.sln
+D	SAWZE_Documentation/Last Mile/.~lock.SAWZE_priority_plan.xlsx#
+M	SAWZE_Documentation/Last Mile/unic_lvl_assts_brainstorm.xlsx
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution, or use 'git commit -a'.
+   bei System.Reactive.PlatformServices.ExceptionServicesImpl.Rethrow(Exception exception)
+   bei System.Reactive.ExceptionHelpers.ThrowIfNotNull(Exception exception)
+   bei System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   bei GitHub.Helpers.GitClient.<>c__DisplayClass11c.<<SyncBranch>b__117>d__123.MoveNext()
+2015-01-12 17:03:08.8262|INFO|thread: 1|SyncButtonViewModel|Completing sync for C:\Users\robert.luecke\Desktop\S.A.W.Z.E - master
+2015-01-12 17:03:08.8272|INFO|thread:34|AsyncReaderWriterLock|Acquiring concurrent lock for operation 20: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:08.8272|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent lock for operation 20: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:08.8582|INFO|thread:48|AsyncReaderWriterLock|Acquiring concurrent lock for operation 21: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:08.8582|INFO|thread:48|AsyncReaderWriterLock|Acquired concurrent lock for operation 21: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:08.8582|INFO|thread:34|AsyncReaderWriterLock|Released concurrent lock for operation 20: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:08.8582|INFO|thread:47|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:03:08.8812|INFO|thread:48|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:03:08.8812|INFO|thread:48|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:03:08.8812|INFO|thread:48|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:03:08.8812|INFO|thread:47|RepositoryConnection|Loaded '1' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:03:08.8812|INFO|thread:38|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:03:08.8952|INFO|thread:38|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:03:08.9622|INFO|thread:45|AsyncReaderWriterLock|Released concurrent lock for operation 21: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:09.0842|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 17:03:09.0842|INFO|thread:47|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 17:03:09.0922|INFO|thread:47|RepositoryConnection|branch stats: ahead 1, behind 1
+2015-01-12 17:03:12.9272|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:03:12.9272|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:03:12.9272|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status bf049a27ea4b3415d26c7a5a08c5c78d6e9f7fd9 ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:03:12.9272|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:03:12.9272|INFO|thread: 1|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:03:12.9272|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat bf049a27ea4b3415d26c7a5a08c5c78d6e9f7fd9 ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:03:25.1741|INFO|thread:46|AsyncReaderWriterLock|Acquiring exclusive lock for operation 22: 'RevertCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.1741|INFO|thread:48|AsyncReaderWriterLock|Acquired exclusive lock for operation 22: 'RevertCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.1991|INFO|thread:48|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:03:25.1991|INFO|thread:48|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:03:25.1991|INFO|thread:48|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'revert bf049a27ea4b3415d26c7a5a08c5c78d6e9f7fd9 ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:03:25.2391|INFO|thread:34|AsyncReaderWriterLock|Released exclusive lock for operation 22: 'RevertCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.2391|INFO|thread:49|AsyncReaderWriterLock|Acquiring concurrent lock for operation 23: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.2391|INFO|thread:49|AsyncReaderWriterLock|Acquired concurrent lock for operation 23: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.2571|INFO|thread:49|AsyncReaderWriterLock|Released concurrent lock for operation 23: 'LoadHeadForRepo' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.2571|INFO|thread:46|AsyncReaderWriterLock|Acquiring concurrent lock for operation 24: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.2571|INFO|thread:46|AsyncReaderWriterLock|Acquired concurrent lock for operation 24: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.2571|INFO|thread:34|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:03:25.2571|INFO|thread:46|GitEnvironment|Process set up with this SSH Agent info: 6364:/tmp/ssh-eCjKfqiFsZqM/agent.3284
+2015-01-12 17:03:25.2571|INFO|thread:46|GitEnvironment|PATH is C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\robert.luecke\AppData\Local\Apps\2.0\T7BXREGP.163\5CP2637C.6JY\gith..tion_317444273a93ac29_0002.0006_159c473f7cb71f94;C:\Users\robert.luecke\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2015-01-12 17:03:25.2571|INFO|thread:46|ProcessWrapper|Starting: Process - FileName: 'C:\Users\robert.luecke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\
+2015-01-12 17:03:25.2571|INFO|thread:34|RepositoryConnection|Loaded '1' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:03:25.2691|INFO|thread:45|GitClient|Loading commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E
+2015-01-12 17:03:25.2691|INFO|thread:45|RepositoryConnection|Loaded '25' commits for repo: C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.
+2015-01-12 17:03:25.3371|INFO|thread:48|AsyncReaderWriterLock|Released concurrent lock for operation 24: 'LoadFilesInWorkingDirectory' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:25.4661|INFO|thread: 1|SyncButtonViewModel|Getting ahead/behind counts but skipping the fetch.
+2015-01-12 17:03:25.4721|INFO|thread:30|RepositoryConnection|Detecting ahead/behind info for branch: master.
+2015-01-12 17:03:25.4721|INFO|thread:30|RepositoryConnection|branch stats: ahead 1, behind 1
+2015-01-12 17:03:25.4721|WARN|thread: 1|StandardUserErrors|Showing user error You have unmerged files in your working directory. Resolve them and commit them before trying the revert again.
+GitHub.IO.ProcessException: error: 'revert' is not possible because you have unmerged files.
+hint: Fix them up in the work tree,
+hint: and then use 'git add/rm <file>' as
+hint: appropriate to mark resolution and make a commit,
+hint: or use 'git commit -a'.
+fatal: revert failed
+   bei System.Reactive.PlatformServices.ExceptionServicesImpl.Rethrow(Exception exception)
+   bei System.Reactive.ExceptionHelpers.ThrowIfNotNull(Exception exception)
+   bei System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   bei GitHub.Helpers.GitClient.<>c__DisplayClassdb.<<RevertCommit>b__da>d__dd.MoveNext()
+2015-01-12 17:03:34.6880|INFO|thread:37|AsyncReaderWriterLock|Acquiring exclusive lock for operation 25: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:34.6880|INFO|thread:37|AsyncReaderWriterLock|Acquired exclusive lock for operation 25: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git
+2015-01-12 17:03:34.7080|INFO|thread:37|ExclusiveRepositoryConnection|Creating Commit
+2015-01-12 17:03:34.8020|INFO|thread:37|ExclusiveRepositoryConnection|Creating new commit with 45 file(s). Merge remote-tracking branch 'origin/master'
+
+Conflicts:
+	SAWZE/Library/CurrentLayout.dwlt
+	SAWZE/Library/CurrentMaximizeLayout.dwlt
+	SAWZE/Library/assetDatabase3
+	SAWZE/Library/expandedItems
+	SAWZE/Library/guidmapper
+	SAWZE/Library/shadercompiler-1.log
+	SAWZE/SAWZE-csharp.sln
+	SAWZE/SAWZE.sln
+
+2015-01-12 17:03:34.8020|INFO|thread:37|AsyncReaderWriterLock|Released exclusive lock for operation 25: 'CreateCommit' on resource C:\Users\robert.luecke\Desktop\S.A.W.Z.E\.git

@@ -1,0 +1,16 @@
+Levelcreation Document 
+
+#1 Load the latest files from Dropbox SAWZE_Pub (here 9th December 2014)
+#2 Open Unity and Create New Project
+#3 Import all 'the following packages' with setup defaults for 3D and click create
+#4 unzip sawze_b17 on your computer/desktop and click New Scene in Unity 
+#5 File >Save Scene as (i.e. rob_lvl_01_test --> [Name]_lvl_[number]_stage)
+#6 go to Hierarchy > delete Main Camera
+#7 add Assets > Prefabs > Main Camera by drag and drop from Project Folder (right side in Unity) and set Transform P(0,0,-5), R(325,0,0)
+#8 add Assets > Prefabs > Background by drag and drop from Project Folder into Hierarchy under Main Camera and scale transform P(0,0,0.01) and scipt
+#9 add Assets > Prefabs > Directional Light by drag and drop from Project Folder to Hiearchy under Background and reposition to P(0,0,-5)-, R(25,-25,0)
+#10 add Assets > Prefabs > Logic > MAP and set this file to P(0,0,0)
+#11 add Assets > Prefabs > Logic > Tile by drag and drop TILE onto MAP in Hierarchy and set Transform to P(0,0,0) to see the pink outline and position
+#12 copy and paste Tile several times in any direction which is needed to build the level. This is the path on which the player navigates through
+#13 add Assets > Prefabs > Interactables by drag and drop Player below MAP (not as subfile) and set the coordinates to P(0,0,0)
+#14 left click on player in the hierarchy, then go to Inspector window > Tile Map > click left on the grey circle > click on MAP to set the rollable path
