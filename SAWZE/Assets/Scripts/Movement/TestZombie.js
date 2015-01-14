@@ -3,25 +3,50 @@
 var speed : float;
 var goals : Vector2[];
 
+private var goalException : boolean;
+private var manualGoal : Vector2;
 private var tileMap : TileMap;
 private var dir : Vector2;
 private var nextTile : Vector3;
 private var goalCount : int;
 
 
-function Start () {
+function Awake() {
+	goalException = false;
 	tileMap = TileMap._this;
 	nextTile = Vector2(Mathf.Round(gameObject.transform.position.x), Mathf.Round(gameObject.transform.position.y));
 	goalCount = 0;
+}
+
+function setGoal(goal : Vector2){
+	goalException = true;
+	manualGoal = goal;
+}
+
+function setSpeed(amt){
+	speed = amt;
+}
+
+function getDir(){
+	return dir;
+}
+
+function getNextTile(){
+	return nextTile;
+}
+
+function hasException(){
+	return goalException;
 }
 
 function Update () { 
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	if(done){
-		var currGoal = goals[goalCount % goals.length]; 
+		var currGoal = goalException ? manualGoal : goals[goalCount % goals.length]; 
 		var nextDir = tileMap.getNavAt(currGoal.x, currGoal.y, nextTile.x, nextTile.y);
 		if(nextDir == Vector2.zero){
+			goalException = false;
 			goalCount++;
 			currGoal = goals[goalCount % goals.length]; 
 			nextDir = tileMap.getNavAt(currGoal.x, currGoal.y, nextTile.x, nextTile.y);

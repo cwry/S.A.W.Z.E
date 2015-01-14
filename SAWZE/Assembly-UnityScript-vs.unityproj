@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -57,11 +57,13 @@
      <Compile Include="Assets\Scripts\General\TileMap.js" />
      <Compile Include="Assets\Scripts\General\Vignette.js" />
      <Compile Include="Assets\Scripts\Movement\FollowMovement.js" />
+     <Compile Include="Assets\Scripts\Movement\HunterZombieExtension.js" />
      <Compile Include="Assets\Scripts\Movement\MovementUtil.js" />
      <Compile Include="Assets\Scripts\Movement\PlayerController.js" />
      <Compile Include="Assets\Scripts\Movement\TestZombie.js" />
      <Compile Include="Assets\Scripts\Objective\ObjectiveCollect.js" />
      <Compile Include="Assets\Scripts\StartLevel.js" />
+     <Compile Include="Assets\Scripts\Trigger\AlarmTrigger.js" />
      <Compile Include="Assets\Scripts\Trigger\CloudTrigger.js" />
      <Compile Include="Assets\Scripts\Trigger\DoorTrigger.js" />
      <Compile Include="Assets\Scripts\Trigger\MediPackTrigger.js" />
@@ -75,7 +77,7 @@
      <None Include="Assets\Shaders\ToonLightedOutline.shader" />
      <None Include="Assets\Shaders\ToonLighted.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
