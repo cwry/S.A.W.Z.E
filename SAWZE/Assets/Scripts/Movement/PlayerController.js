@@ -26,6 +26,10 @@ function speedUp(args){
 	gameObject.particleSystem.Stop();
 }
 
+function setSpeed(amt : float){
+	speed = amt;
+}
+
 function Update () { 
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
