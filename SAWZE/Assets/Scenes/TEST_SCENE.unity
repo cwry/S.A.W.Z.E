@@ -4189,7 +4189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 1def51cb66638de46baf5d382c797937, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1d8211639e5b3d43b6b2a03ee32faa0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8966,7 +8966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &461933477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14373,7 +14373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &767705702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20138,6 +20138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67bee46119c597949b3bdc2ffdf6550e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  survivorPrefab: {fileID: 100000, guid: 737eb6b5701a99b4a8343dd679bf8495, type: 2}
 --- !u!1 &1015300624
 GameObject:
   m_ObjectHideFlags: 0
@@ -27707,7 +27708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &1447909106
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29025,7 +29026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &1516060700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34647,6 +34648,10 @@ Prefab:
       propertyPath: tileMap
       value: 
       objectReference: {fileID: 1470723470}
+    - target: {fileID: 11400002, guid: 2f662f7506ee6ba43adc2115621f3ca0, type: 2}
+      propertyPath: survivorPrefab
+      value: 
+      objectReference: {fileID: 100000, guid: 737eb6b5701a99b4a8343dd679bf8495, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f662f7506ee6ba43adc2115621f3ca0, type: 2}
   m_RootGameObject: {fileID: 1014244585}
@@ -35172,7 +35177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &1713412032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35500,7 +35505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &1722134925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39208,7 +39213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &1925712399
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40152,7 +40157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddcb69a1089c4980a595c4531284a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: .0500000007
+  amount: .100000001
 --- !u!61 &1978421506
 BoxCollider2D:
   m_ObjectHideFlags: 0
