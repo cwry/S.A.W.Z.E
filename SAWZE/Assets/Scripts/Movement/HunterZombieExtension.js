@@ -13,23 +13,27 @@ function Update(){
 	//still kinda dirty
 	var dir = _this.getDir();
 	var next : Vector3 = _this.getNextTile();
-	var current = Vector2(next.x, next.y);
+	var current = Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+	current.x = Mathf.Round(current.x);
+	current.y = Mathf.Round(current.y);
 	var target = Vector2(Player._this.transform.position.x, Player._this.transform.position.y);
 	target.x = Mathf.Round(target.x);
 	target.y = Mathf.Round(target.y);
-	if(dir != Vector2.zero && !_this.hasException()){
+	
+	var ray = current;
+	if(dir != Vector2.zero){
 		var inSight = false;
-		while(TileMap._this.getTileAt(current.x, current.y)){
-			if(current == target){
+		while(TileMap._this.getTileAt(ray.x, ray.y)){
+			if(ray == target){
 				inSight = true;
 				break;
 			}
-			current += dir;
+			ray += dir;
 		}
-		if(inSight){
+		if(inSight || (_this.hasException() && (target.x == current.x || target.y == current.y))){
 			gameObject.SendMessage("setGoal", target);
 			gameObject.SendMessage("setSpeed", fast);
-		}else{
+		}else if(!_this.hasException()){
 			gameObject.SendMessage("setSpeed", slow);
 		}
 	}
