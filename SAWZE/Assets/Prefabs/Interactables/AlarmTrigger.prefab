@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2384230}
   - 61: {fileID: 6184230}
   - 114: {fileID: 11484230}
+  - 111: {fileID: 11129220}
   m_Layer: 0
   m_Name: AlarmTrigger
   m_TagString: Untagged
@@ -69,6 +70,21 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!111 &11129220
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184230}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 27ce710d29bd12444a1f3217b5c3aa84, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 27ce710d29bd12444a1f3217b5c3aa84, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &11484230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,6 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rallyingPoint: {x: 12, y: -3}
+  alarm: {fileID: 0}
+  pressedMesh: {fileID: 0}
+  normalMesh: {fileID: 0}
+  pressedMat: {fileID: 0}
+  normalMat: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
