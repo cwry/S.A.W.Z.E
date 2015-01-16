@@ -9,6 +9,7 @@ private var tileMap : TileMap;
 private var dir : Vector2;
 private var nextTile : Vector3;
 private var goalCount : int;
+private var model : GameObject;
 
 
 function Awake() {
@@ -16,6 +17,7 @@ function Awake() {
 	tileMap = TileMap._this;
 	nextTile = Vector2(Mathf.Round(gameObject.transform.position.x), Mathf.Round(gameObject.transform.position.y));
 	goalCount = 0;
+	model = transform.Find("Model").gameObject;
 }
 
 function setGoal(goal : Vector2){
@@ -40,6 +42,8 @@ function hasException(){
 }
 
 function Update () { 
+	//NOT DYNAMIC
+	model.animation["Take 001"].speed = speed * 2;
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	if(done){

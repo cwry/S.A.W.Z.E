@@ -7,13 +7,17 @@ var keepDistance : float;
 private var tileMap : TileMap;
 private var dir : Vector2;
 private var nextTile : Vector3;
+private var model : GameObject;
 
 function Start () {
 	tileMap = TileMap._this;
 	nextTile = Vector2(Mathf.Round(gameObject.transform.position.x), Mathf.Round(gameObject.transform.position.y));
+	model = transform.Find("Model").gameObject;
 }
 
 function Update () { 
+	//NOT DYNAMIC
+	model.animation["Take 001"].speed = speed;
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	var goal = Vector2(Mathf.Round(target.position.x), Mathf.Round(target.position.y));

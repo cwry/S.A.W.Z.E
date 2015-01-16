@@ -1,22 +1,18 @@
 ﻿#pragma strict
 
-var normal : float;
-var slow : float;
+var slowDown : float;
 
 function OnTriggerEnter2D(coll : Collider2D){
-	if(coll.gameObject.name == "Player"){
-		Player._this.gameObject.SendMessage("setSpeed", slow); 
+	if(coll.gameObject.name == "Player" && !coll.GetComponent(PlayerController).isOnSlow()){
+		Player._this.gameObject.SendMessage("setSlow", true); 
+		Player._this.gameObject.SendMessage("addSpeed", -slowDown); 
 	}
 }
 
-function OnTriggerStay2D(coll : Collider2D){
-	if(coll.gameObject.name == "Player"){
-		Player._this.gameObject.SendMessage("setSpeed", slow); 
-	}
-}
 
 function OnTriggerExit2D(coll : Collider2D){
-	if(coll.gameObject.name == "Player"){
-		Player._this.gameObject.SendMessage("setSpeed", normal); 
+	if(coll.gameObject.name == "Player" && coll.GetComponent(PlayerController).isOnSlow()){
+		Player._this.gameObject.SendMessage("setSlow", false); 
+		Player._this.gameObject.SendMessage("addSpeed", slowDown); 
 	}
 }

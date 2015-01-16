@@ -1,4 +1,4 @@
-﻿#pragma strict
+﻿
 
 static var _this : Player;
 
@@ -31,13 +31,19 @@ function hurt(amt : float){
 	gotHurt = true;
 }
 
-function gotAntidote(dur : float){
-	var passed : float = 0;
+function gotAntidote(args){
+	//args[0] --> speed
+	//args[1] --> duration
+	var passedT : float = 0;
 	superAntidote = true;
-	while(passed < dur){
-		passed += Time.deltaTime;
+	gameObject.SendMessage("addSpeed", args[0]);
+	
+	while(passedT < args[1]){
+		passedT += Time.deltaTime;
 		yield;
 	}
+	
+	gameObject.SendMessage("addSpeed", -args[0]);
 	superAntidote = false;
 }
 

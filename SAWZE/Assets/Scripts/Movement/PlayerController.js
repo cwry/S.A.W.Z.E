@@ -4,15 +4,19 @@ var dir : Vector2;
 private var tileMap : TileMap;
 private var lastValidInput : Vector2;
 private var nextTile : Vector3;
+private var isSlow : boolean;
+private var model : GameObject;
 
 
 function Start () {
+	isSlow = false;
 	tileMap = TileMap._this;
 	nextTile = Vector2(Mathf.Round(gameObject.transform.position.x), Mathf.Round(gameObject.transform.position.y));
 	lastValidInput = dir;
+	model = transform.Find("Model").gameObject;
 }
 
-function speedUp(args){
+function speedUpNitro(args){
 	//args[0] --> speed
 	//args[1] --> duration
 	gameObject.particleSystem.Play();
@@ -26,11 +30,22 @@ function speedUp(args){
 	gameObject.particleSystem.Stop();
 }
 
-function setSpeed(amt : float){
-	speed = amt;
+function addSpeed(amt : float){
+	speed += amt;
 }
 
+function isOnSlow(){
+	return isSlow;
+}
+
+function setSlow(bool : boolean){
+	isSlow = bool;
+}
+
+
 function Update () { 
+	//NOT DYNAMIC!!
+	model.animation["Take 001"].speed = speed;
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	var inputDir : Vector2 = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); 
