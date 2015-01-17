@@ -12,7 +12,6 @@ function Awake(){
 
 function Update(){
 	var f : float = 1 + ((1 + Mathf.Sin(Time.realtimeSinceStartup * speed)) / 2) * amt;
-	Debug.Log(f);
 	trans.sizeDelta.x = size.x * f;
 	trans.sizeDelta.y = size.y * f;
 }
