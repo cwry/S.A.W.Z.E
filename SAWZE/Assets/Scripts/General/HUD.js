@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
-private var oxygenTexture : Texture2D;
-private var backgroundTexture: Texture2D;
+var oxygenTexture : Texture2D;
+var backgroundTexture: Texture2D;
 private var oxygenStyle : GUIStyle;
 private var backgroundStyle : GUIStyle;
 
@@ -23,15 +23,15 @@ private var arrowExitStyle : GUIStyle;
 
 function Awake(){
 	//tentative
-	oxygenTexture = Texture2D(1, 1);
-	oxygenTexture.SetPixel(0, 0, Color(1, 0, 0, 1));
-	oxygenTexture.Apply();
+	//oxygenTexture = Texture2D(1, 1);
+	//oxygenTexture.SetPixel(0, 0, Color(1, 0, 0, 1));
+	//oxygenTexture.Apply();
 	oxygenStyle = GUIStyle();
 	oxygenStyle.normal.background = oxygenTexture;
 	
-	backgroundTexture = Texture2D(1, 1);
-	backgroundTexture.SetPixel(0, 0, Color(0, 0, 0, 1));
-	backgroundTexture.Apply();
+	//backgroundTexture = Texture2D(1, 1);
+	//backgroundTexture.SetPixel(0, 0, Color(0, 0, 0, 1));
+	//backgroundTexture.Apply();
 	backgroundStyle = GUIStyle();
 	backgroundStyle.normal.background = backgroundTexture;
 	
