@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 var objective : GameObject;
+var sound : AudioClip;
 
 function OnTriggerEnter2D(coll : Collider2D){
 	 if(coll.gameObject.name == "Player" && gameObject.GetComponent(FollowMovement).enabled == false){
@@ -8,5 +9,6 @@ function OnTriggerEnter2D(coll : Collider2D){
 	 	gameObject.GetComponent(FollowMovement).enabled = true;
 	 	gameObject.GetComponent(FollowMovement).target = Player._this.getLastChain();
 	 	Player._this.addChain(transform);
+	 	AudioSource.PlayClipAtPoint(sound, transform.position);
 	 }
 }
