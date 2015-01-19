@@ -1,12 +1,16 @@
 ﻿#pragma strict
 
+static var _this : ObjectiveCollect;
+
 var collectibles : GameObject[] = [];
 var triggers : GameObject[] = [];
+var appearances : String[];
 
 private var num : int;
 private var completed : boolean = false;
 
-function Start (){
+function Awake(){
+	_this = this;
 	num = collectibles.length;
 }
 
@@ -23,6 +27,18 @@ function check(obj : GameObject){
 			complete();
 		} 
 	}
+}
+
+function getAppearances(){
+	return appearances;
+}
+
+function getCompletion(){
+	return collectibles;
+}
+
+function isComplete(){
+	return completed;
 }
 
 function complete(){

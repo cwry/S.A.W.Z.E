@@ -5,7 +5,20 @@ var backgroundTexture: Texture2D;
 private var oxygenStyle : GUIStyle;
 private var backgroundStyle : GUIStyle;
 
-private var mmBackgroundTexture : Texture2D;
+var objShoppingTextureFull : Texture2D;
+var objShoppingTextureEmpty : Texture2D;
+var objMedipackTextureFull : Texture2D;
+var objMedipackTextureEmpty : Texture2D;
+var objSurvivorTextureFull : Texture2D;
+var objSurvivorTextureEmpty : Texture2D;
+private var objShoppingStyleFull : GUIStyle;
+private var objShoppingStyleEmpty : GUIStyle;
+private var objMedipackStyleFull : GUIStyle;
+private var objMedipackStyleEmpty : GUIStyle;
+private var objSurvivorStyleFull : GUIStyle;
+private var objSurvivorStyleEmpty : GUIStyle;
+
+/*private var mmBackgroundTexture : Texture2D;
 private var mmBackgroundStyle : GUIStyle;
 private var mmTileTexture : Texture2D;
 private var mmTileStyle : GUIStyle;
@@ -14,7 +27,7 @@ private var mmCollectibleStyle : GUIStyle;
 private var mmPlayerTexture : Texture2D;
 private var mmPlayerStyle : GUIStyle;
 private var mmExitTexture : Texture2D;
-private var mmExitStyle : GUIStyle;
+private var mmExitStyle : GUIStyle;*/
 
 private var arrowCollectibleTexture : Texture2D;
 private var arrowCollectibleStyle : GUIStyle;
@@ -35,7 +48,25 @@ function Awake(){
 	backgroundStyle = GUIStyle();
 	backgroundStyle.normal.background = backgroundTexture;
 	
-	mmBackgroundTexture = Texture2D(1, 1);
+	objShoppingStyleFull = GUIStyle();
+	objShoppingStyleFull.normal.background = objShoppingTextureFull;
+	
+	objShoppingStyleEmpty = GUIStyle();
+	objShoppingStyleEmpty.normal.background = objShoppingTextureEmpty;
+	
+	objMedipackStyleFull = GUIStyle();
+	objMedipackStyleFull.normal.background = objMedipackTextureFull;
+	
+	objMedipackStyleEmpty = GUIStyle();
+	objMedipackStyleEmpty.normal.background = objMedipackTextureEmpty;
+	
+	objSurvivorStyleFull = GUIStyle();
+	objSurvivorStyleFull.normal.background = objSurvivorTextureFull;
+	
+	objSurvivorStyleEmpty = GUIStyle();
+	objSurvivorStyleEmpty.normal.background = objSurvivorTextureEmpty;
+	
+	/*mmBackgroundTexture = Texture2D(1, 1);
 	mmBackgroundTexture.SetPixel(0, 0, Color(1, 1, 1, 0.5));
 	mmBackgroundTexture.Apply();
 	mmBackgroundStyle = GUIStyle();
@@ -63,7 +94,9 @@ function Awake(){
 	mmExitTexture.SetPixel(0, 0, Color(1, 0, 0, 1));
 	mmExitTexture.Apply();
 	mmExitStyle = GUIStyle();
-	mmExitStyle.normal.background = mmExitTexture;
+	mmExitStyle.normal.background = mmExitTexture;*/
+	
+	
 	
 	arrowCollectibleTexture = Texture2D(1, 1);
 	arrowCollectibleTexture.SetPixel(0, 0, Color(0, 0, 1, 0.75));
@@ -82,8 +115,8 @@ function Awake(){
 function OnGUI(){
 	
 	//Health Bar
-	var h = Screen.height / 2;
-	var w = h / 6;
+	var h : float = Screen.height / 2;
+	var w : float = h / 6;
 	GUI.BeginGroup(new Rect(10, 10, w, h));
 		GUI.Box(new Rect(0, 0, w, h), GUIContent.none, backgroundStyle);
 		var offset = h - h * Player._this.oxygen;
@@ -92,16 +125,16 @@ function OnGUI(){
 		GUI.EndGroup();
 	GUI.EndGroup();
 	
+	var collectibles = GameObject.FindGameObjectsWithTag("Collectible");
+	var exits = GameObject.FindGameObjectsWithTag("Exit");
 	
-	h = Screen.height / 4;
+	
+	/*h = Screen.height / 4;
 	w = h;
 	var map : TileMap = TileMap._this;
 	var tSize = Mathf.Round(h / 30);
 	var root = Mathf.Round((w - tSize) / 2);
 	var rootWorld = Vector2(Mathf.Round(Player._this.transform.position.x), Mathf.Round(Player._this.transform.position.y));
-	
-	var collectibles = GameObject.FindGameObjectsWithTag("Collectible");
-	var exits = GameObject.FindGameObjectsWithTag("Exit");
 	
 	//Mini Map
 	GUI.BeginGroup(new Rect(Screen.width - w - 10, 10, w, h));
@@ -129,8 +162,32 @@ function OnGUI(){
 		
 		GUI.Box(new Rect(root, root, tSize, tSize), GUIContent.none, mmPlayerStyle);
 	GUI.EndGroup();
-	
+	*/
 	//Arrows
+	
+	h = Screen.height / 12;
+	w = h / objShoppingTextureFull.height * objShoppingTextureFull.width;
+	var num = ObjectiveCollect._this.getCompletion().Length;
+	
+	GUI.BeginGroup(new Rect(Screen.width - w - 20, 20, w, h * num));
+		for(var i = 0; i < num; i++){
+			var appearance : GUIStyle;
+			
+			if(ObjectiveCollect._this.getAppearances()[i] == "ShoppingBag"){
+			     appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objShoppingStyleEmpty : objShoppingStyleFull);
+			}
+			else if(ObjectiveCollect._this.getAppearances()[i] == "MediPack"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objMedipackStyleEmpty : objMedipackStyleFull);
+			}
+			else if(ObjectiveCollect._this.getAppearances()[i] == "Survivor"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objSurvivorStyleEmpty : objSurvivorStyleFull);
+			}
+			
+			GUI.Box(new Rect(0, h * i, w, h), GUIContent.none, appearance);
+		}
+	
+	GUI.EndGroup();
+	  
 	
 	h = Screen.height / 16;
 	w = h;
@@ -164,29 +221,31 @@ function OnGUI(){
 		}
 	}
 	
-	for(var exit in exits){
-		pos = Camera.mainCamera.WorldToScreenPoint(exit.transform.position);
+	if(ObjectiveCollect._this.isComplete()){
+		for(var exit in exits){
+			pos = Camera.mainCamera.WorldToScreenPoint(exit.transform.position);
 		
-		shouldDraw = false;
+			shouldDraw = false;
 		
-		if(pos.x < hw){
-			pos.x = hw;
-			shouldDraw = true;
-		}else if(pos.x > Screen.width - hw){
-			pos.x = Screen.width - hw;		
-			shouldDraw = true;
-		}
+			if(pos.x < hw){
+				pos.x = hw;
+				shouldDraw = true;
+			}else if(pos.x > Screen.width - hw){
+				pos.x = Screen.width - hw;		
+				shouldDraw = true;
+			}
 		
-		if(pos.x < hh){
-			pos.y = hh;
-			shouldDraw = true;
-		}else if(pos.y > Screen.height - hh){
-			pos.y = Screen.height - hh;		
-			shouldDraw = true;
-		}
+			if(pos.x < hh){
+				pos.y = hh;
+				shouldDraw = true;
+			}else if(pos.y > Screen.height - hh){
+				pos.y = Screen.height - hh;		
+				shouldDraw = true;
+			}
 
-		if(shouldDraw){
-			GUI.Box(new Rect(pos.x - w * 0.5, Screen.height - pos.y - h * 0.5, w, h), GUIContent.none, arrowExitStyle);
+			if(shouldDraw){
+				GUI.Box(new Rect(pos.x - w * 0.5, Screen.height - pos.y - h * 0.5, w, h), GUIContent.none, arrowExitStyle);
+			}
 		}
 	}
 }
