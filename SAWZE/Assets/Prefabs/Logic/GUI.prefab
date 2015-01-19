@@ -27,7 +27,6 @@ GameObject:
   - 223: {fileID: 22300000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400006}
-  - 114: {fileID: 11400002}
   m_Layer: 5
   m_Name: Vignette
   m_TagString: Untagged
@@ -145,17 +144,6 @@ MonoBehaviour:
     type: 3}
   objSurvivorTextureEmpty: {fileID: 2800000, guid: d7b3991ddf255424c9a9f9b0f4544889,
     type: 3}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f31037946e73741a25b38e7f30467d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: c1d8211639e5b3d43b6b2a03ee32faa0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2bb3f26080362ae4492d4b8d4ce407cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -349,7 +337,7 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 0
   m_Camera: {fileID: 0}
