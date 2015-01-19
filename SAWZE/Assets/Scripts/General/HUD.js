@@ -187,7 +187,7 @@ function OnGUI(){
 		}
 	
 	GUI.EndGroup();
-	  
+	
 	
 	h = Screen.height / 16;
 	w = h;
