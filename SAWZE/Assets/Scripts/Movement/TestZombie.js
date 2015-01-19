@@ -41,10 +41,6 @@ function hasException(){
 	return goalException;
 }
 
-function setGoalException(bool : boolean){
-	goalException = bool;
-}
-
 function Update () { 
 	//NOT DYNAMIC
 	model.animation["Take 001"].speed = speed * 2;
