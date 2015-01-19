@@ -53,6 +53,7 @@ function hasAntidote(){
 
 function addOxygen(amt : float){
 	oxygen += amt;
+	if(oxygen > 1) oxygen = 1;
 }
 
 function Update(){
