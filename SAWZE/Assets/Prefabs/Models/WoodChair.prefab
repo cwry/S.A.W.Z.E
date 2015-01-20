@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456218}
-  - 95: {fileID: 9556220}
   m_Layer: 0
   m_Name: WoodChair
   m_TagString: Untagged
@@ -85,21 +84,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156220}
   m_Mesh: {fileID: 4300000, guid: aab9cf888f6c6b24eb12bf008cfeb688, type: 3}
---- !u!95 &9556220
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156218}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: aab9cf888f6c6b24eb12bf008cfeb688, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

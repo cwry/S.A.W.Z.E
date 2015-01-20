@@ -25,7 +25,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485570}
-  - 95: {fileID: 9585568}
   m_Layer: 0
   m_Name: Carpet
   m_TagString: Untagged
@@ -85,21 +84,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185568}
   m_Mesh: {fileID: 4300000, guid: df1c9589ae3551f4dab3dc1f3703ceeb, type: 3}
---- !u!95 &9585568
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185570}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: df1c9589ae3551f4dab3dc1f3703ceeb, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
