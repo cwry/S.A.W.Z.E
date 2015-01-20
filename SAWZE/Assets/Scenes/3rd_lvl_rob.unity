@@ -5928,6 +5928,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f1568ca1b507940a61d5049f72d67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oxygenTexture: {fileID: 2800000, guid: d9ca3f244d88a6a44a8120953c7b7191, type: 3}
+  backgroundTexture: {fileID: 2800000, guid: bc50a3fdb72381848b3e2424554f29d9, type: 3}
+  objShoppingTextureFull: {fileID: 2800000, guid: cb1034b5e6efe2945a65012462d522db,
+    type: 3}
+  objShoppingTextureEmpty: {fileID: 2800000, guid: 0ccfc6ff54b6f4442a0ef33eec7e204c,
+    type: 3}
+  objMedipackTextureFull: {fileID: 2800000, guid: 402dc1746a0cae542928b9a0a2eed853,
+    type: 3}
+  objMedipackTextureEmpty: {fileID: 2800000, guid: 5640ae44d723d1e458dc10b46dd9f39f,
+    type: 3}
+  objSurvivorTextureFull: {fileID: 2800000, guid: aa1ac7e26d9bfc746928e1a83c61f8ef,
+    type: 3}
+  objSurvivorTextureEmpty: {fileID: 2800000, guid: d7b3991ddf255424c9a9f9b0f4544889,
+    type: 3}
 --- !u!1 &96380051
 GameObject:
   m_ObjectHideFlags: 0
@@ -18672,7 +18686,7 @@ Transform:
   m_PrefabParentObject: {fileID: 492698, guid: b7af94de9f5d302409bf5486c5ad27e2, type: 2}
   m_PrefabInternal: {fileID: 588591630}
   m_GameObject: {fileID: 326188575}
-  m_LocalRotation: {x: 0, y: 0, z: .575981915, w: .817462385}
+  m_LocalRotation: {x: 0, y: 0, z: .575981975, w: .817462444}
   m_LocalPosition: {x: 6.01000023, y: -31.0499992, z: 0}
   m_LocalScale: {x: 1, y: -1.06675375, z: 1}
   m_Children:
@@ -64025,6 +64039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1983e1d54e842ed44a4996e0ab22a589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amt: .100000001
+  speed: 4
 --- !u!114 &1131958024
 MonoBehaviour:
   m_ObjectHideFlags: 0
