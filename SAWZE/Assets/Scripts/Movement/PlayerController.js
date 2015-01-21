@@ -1,5 +1,6 @@
 ﻿var speed : float;
 var dir : Vector2;
+var nitroParticle : ParticleSystem;
 
 private var tileMap : TileMap;
 private var lastValidInput : Vector2;
@@ -20,7 +21,7 @@ function Start () {
 function speedUpNitro(args){
 	//args[0] --> speed
 	//args[1] --> duration
-	gameObject.particleSystem.Play();
+	nitroParticle.Play();
 	var passed : float = 0;
 	speed += args[0];
 	while(passed < args[1]){
@@ -28,7 +29,7 @@ function speedUpNitro(args){
 		yield;
 	}
 	speed -= args[0];
-	gameObject.particleSystem.Stop();
+	nitroParticle.Stop();
 }
 
 function addSpeed(amt : float){

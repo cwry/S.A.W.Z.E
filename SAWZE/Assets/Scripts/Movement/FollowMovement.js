@@ -17,7 +17,7 @@ function Start () {
 
 function Update () { 
 	//NOT DYNAMIC
-	model.animation["Take 001"].speed = speed;
+	model.animation["Walk"].speed = speed;
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	var goal = Vector2(Mathf.Round(target.position.x), Mathf.Round(target.position.y));
@@ -42,10 +42,12 @@ function Update () {
 	if(Mathf.Abs(dist.x) > keepDistance || Mathf.Abs(dist.y) > keepDistance){
 		gameObject.transform.position += dir * speed * Time.deltaTime;
 		
-		if(!model.animation.isPlaying){
-			model.animation.Play();
+		if(!model.animation["Walk"].enabled){
+			Debug.Log("yo");
+			model.animation.CrossFade("Walk", 0.2);
 		}
-	}else if(model.animation.isPlaying){
-		model.animation.Stop();
+	}else if(model.animation["Walk"].enabled){
+		Debug.Log("ho");
+		model.animation.CrossFade("Idle", 0.2);
 	}
 }

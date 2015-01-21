@@ -290,7 +290,7 @@ ModelImporter:
     400282: Spline3 1
     400284: //RootNode
     4300000: polySurface1_1
-    7400000: Take 001
+    7400000: Idle
     9500000: //RootNode
     13700000: polySurface1_1
   materials:
@@ -308,7 +308,363 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_CTRL
+        weight: 1
+      - path: L_Arm_IK
+        weight: 1
+      - path: L_Foot_CTRL
+        weight: 1
+      - path: L_Leg_IK
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_upperleg
+        weight: 1
+      - path: Pelvis/L_upperleg/L_nee
+        weight: 1
+      - path: Pelvis/L_upperleg/L_nee/L_ankle
+        weight: 1
+      - path: Pelvis/L_upperleg/L_nee/L_ankle/L_footbase
+        weight: 1
+      - path: Pelvis/L_upperleg/L_nee/L_ankle/L_footbase/L_footend
+        weight: 1
+      - path: Pelvis/R_upperleg
+        weight: 1
+      - path: Pelvis/R_upperleg/R_nee
+        weight: 1
+      - path: Pelvis/R_upperleg/R_nee/R_ankle
+        weight: 1
+      - path: Pelvis/R_upperleg/R_nee/R_ankle/R_footbase
+        weight: 1
+      - path: Pelvis/R_upperleg/R_nee/R_ankle/R_footbase/R_footend
+        weight: 1
+      - path: Pelvis/Spline1
+        weight: 1
+      - path: Pelvis/Spline1/Spline2
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_index
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_index/L_index1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_index/L_index1st/L_index2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_index/L_index1st/L_index2nd/L_index3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_little
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_little/L_little1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_little/L_little1st/L_little2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_little/L_little1st/L_little2nd/L_little3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_middle
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_middle/L_middle1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_middle/L_middle1st/L_middle2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_middle/L_middle1st/L_middle2nd/L_middle3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_ring
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_ring/L_ring1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_ring/L_ring1st/L_ring2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_ring/L_ring1st/L_ring2nd/L_ring3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_thumb
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_thumb/L_thumb1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_thumb/L_thumb1st/L_thumb2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Shoulder/L_UpperArm/L_Elbow/L_wrist/L_thumb/L_thumb1st/L_thumb2nd/L_thumb3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/Neck
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/Neck/HeadBase
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/Neck/HeadBase/HeadEnd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/Neck/HeadBase/Jaw
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_index
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_index/R_index1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_index/R_index1st/R_index2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_index/R_index1st/R_index2nd/R_index3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_little
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_little/R_little1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_little/R_little1st/R_little2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_little/R_little1st/R_little2nd/R_little3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_middle
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_middle/R_middle1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_middle/R_middle1st/R_middle2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_middle/R_middle1st/R_middle2nd/R_middle3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_ring
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_ring/R_ring1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_ring/R_ring1st/R_ring2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_ring/R_ring1st/R_ring2nd/R_ring3rd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_thumb
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_thumb/R_thumb1st
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_thumb/R_thumb1st/R_thumb2nd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Shoulder/R_UpperArm/R_Elbow/R_wrist/R_thumb/R_thumb1st/R_thumb2nd/R_thumb3rd
+        weight: 1
+      - path: Pelvis1
+        weight: 1
+      - path: Pelvis1/L_upperleg 1
+        weight: 1
+      - path: Pelvis1/L_upperleg 1/L_nee 1
+        weight: 1
+      - path: Pelvis1/L_upperleg 1/L_nee 1/L_ankle 1
+        weight: 1
+      - path: Pelvis1/L_upperleg 1/L_nee 1/L_ankle 1/L_footbase 1
+        weight: 1
+      - path: Pelvis1/L_upperleg 1/L_nee 1/L_ankle 1/L_footbase 1/L_footend 1
+        weight: 1
+      - path: Pelvis1/R_upperleg 1
+        weight: 1
+      - path: Pelvis1/R_upperleg 1/R_nee 1
+        weight: 1
+      - path: Pelvis1/R_upperleg 1/R_nee 1/R_ankle 1
+        weight: 1
+      - path: Pelvis1/R_upperleg 1/R_nee 1/R_ankle 1/R_footbase 1
+        weight: 1
+      - path: Pelvis1/R_upperleg 1/R_nee 1/R_ankle 1/R_footbase 1/R_footend 1
+        weight: 1
+      - path: Pelvis1/Spline1 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_index 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_index 1/L_index1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_index 1/L_index1st 1/L_index2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_index 1/L_index1st 1/L_index2nd 1/L_index3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_little 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_little 1/L_little1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_little 1/L_little1st 1/L_little2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_little 1/L_little1st 1/L_little2nd 1/L_little3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_middle 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_middle 1/L_middle1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_middle 1/L_middle1st 1/L_middle2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_middle 1/L_middle1st 1/L_middle2nd 1/L_middle3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_ring 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_ring 1/L_ring1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_ring 1/L_ring1st 1/L_ring2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_ring 1/L_ring1st 1/L_ring2nd 1/L_ring3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_thumb 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_thumb 1/L_thumb1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_thumb 1/L_thumb1st 1/L_thumb2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/L_Shoulder 1/L_UpperArm 1/L_Elbow
+          1/L_wrist 1/L_thumb 1/L_thumb1st 1/L_thumb2nd 1/L_thumb3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/Neck 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/Neck 1/HeadBase 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/Neck 1/HeadBase 1/HeadEnd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/Neck 1/HeadBase 1/Jaw 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_index 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_index 1/R_index1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_index 1/R_index1st 1/R_index2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_index 1/R_index1st 1/R_index2nd 1/R_index3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_little 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_little 1/R_little1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_little 1/R_little1st 1/R_little2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_little 1/R_little1st 1/R_little2nd 1/R_little3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_middle 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_middle 1/R_middle1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_middle 1/R_middle1st 1/R_middle2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_middle 1/R_middle1st 1/R_middle2nd 1/R_middle3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_ring 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_ring 1/R_ring1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_ring 1/R_ring1st 1/R_ring2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_ring 1/R_ring1st 1/R_ring2nd 1/R_ring3rd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_thumb 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_thumb 1/R_thumb1st 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_thumb 1/R_thumb1st 1/R_thumb2nd 1
+        weight: 1
+      - path: Pelvis1/Spline1 1/Spline2 1/Spline3 1/R_Shoulder 1/R_UpperArm 1/R_Elbow
+          1/R_wrist 1/R_thumb 1/R_thumb1st 1/R_thumb2nd 1/R_thumb3rd 1
+        weight: 1
+      - path: polySurface1_1
+        weight: 1
+      - path: R_Arm_IK
+        weight: 1
+      - path: R_LEg_IK
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -4,7 +4,7 @@ var survivorPrefab : GameObject;
 var poofParticle : ParticleSystem;
 
 function OnTriggerEnter2D(other: Collider2D){
-	if(other.gameObject.name == "Player" || (other.gameObject.name == "Survivor" && other.GetComponent(FollowMovement).enabled)){
+	if(other.gameObject.name == "Player" || other.GetComponent(FollowMovement).enabled){
 		if(Player._this.hasAntidote()){
 			var survivor = Instantiate(survivorPrefab);
 			var particle = Instantiate(poofParticle);

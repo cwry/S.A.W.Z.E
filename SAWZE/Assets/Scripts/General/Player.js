@@ -1,9 +1,8 @@
-﻿
-
-static var _this : Player;
+﻿static var _this : Player;
 
 var contamination : float;
 var oxygen : float = 1;
+var antidoteParticle : ParticleSystem;
 
 private var superAntidote : boolean;
 private var gotHurt : boolean = false;
@@ -48,6 +47,7 @@ function gotAntidote(args){
 	//args[0] --> speed
 	//args[1] --> duration
 	var passedT : float = 0;
+	antidoteParticle.Play();
 	superAntidote = true;
 	gameObject.SendMessage("addSpeed", args[0]);
 	
@@ -58,6 +58,7 @@ function gotAntidote(args){
 	
 	gameObject.SendMessage("addSpeed", -args[0]);
 	superAntidote = false;
+	antidoteParticle.Stop();
 }
 
 function hasAntidote(){
