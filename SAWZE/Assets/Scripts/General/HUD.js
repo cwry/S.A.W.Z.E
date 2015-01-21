@@ -9,14 +9,26 @@ var objShoppingTextureFull : Texture2D;
 var objShoppingTextureEmpty : Texture2D;
 var objMedipackTextureFull : Texture2D;
 var objMedipackTextureEmpty : Texture2D;
-var objSurvivorTextureFull : Texture2D;
-var objSurvivorTextureEmpty : Texture2D;
+var objHumanMTextureFull : Texture2D;
+var objHumanMTextureEmpty : Texture2D;
+var objHumanFTextureFull : Texture2D;
+var objHumanFTextureEmpty : Texture2D;
+var objCatTextureFull : Texture2D;
+var objCatTextureEmpty : Texture2D;
+var objDogTextureFull : Texture2D;
+var objDogTextureEmpty : Texture2D;
 private var objShoppingStyleFull : GUIStyle;
 private var objShoppingStyleEmpty : GUIStyle;
 private var objMedipackStyleFull : GUIStyle;
 private var objMedipackStyleEmpty : GUIStyle;
-private var objSurvivorStyleFull : GUIStyle;
-private var objSurvivorStyleEmpty : GUIStyle;
+private var objHumanMStyleFull : GUIStyle;
+private var objHumanMStyleEmpty : GUIStyle;
+private var objHumanFStyleFull : GUIStyle;
+private var objHumanFStyleEmpty : GUIStyle;
+private var objCatStyleFull : GUIStyle;
+private var objCatStyleEmpty : GUIStyle;
+private var objDogStyleFull : GUIStyle;
+private var objDogStyleEmpty : GUIStyle;
 
 /*private var mmBackgroundTexture : Texture2D;
 private var mmBackgroundStyle : GUIStyle;
@@ -35,8 +47,14 @@ var arrowExitTexture : Texture2D;
 private var arrowExitStyle : GUIStyle;
 var arrowSupplyTexture : Texture2D;
 private var arrowSupplyStyle : GUIStyle;
-var arrowSurvivorTexture : Texture2D;
-private var arrowSurvivorStyle : GUIStyle;
+var arrowHumanMTexture : Texture2D;
+private var arrowHumanMStyle : GUIStyle;
+var arrowHumanFTexture : Texture2D;
+private var arrowHumanFStyle : GUIStyle;
+var arrowCatTexture : Texture2D;
+private var arrowCatStyle : GUIStyle;
+var arrowDogTexture : Texture2D;
+private var arrowDogStyle : GUIStyle;
 
 var damageIndicatorTexture : Texture2D;
 private var damageIndicatorStyle : GUIStyle;
@@ -45,13 +63,19 @@ private var damageIndicatorAlpha : float;
 private var medi : GameObject[];
 private var exits : GameObject[];
 private var supply : GameObject[];
-private var survivor : GameObject[];
+private var humanM : GameObject[];
+private var humanF : GameObject[];
+private var cat : GameObject[];
+private var dog : GameObject[];
 
 function Awake(){
 	medi = GameObject.FindGameObjectsWithTag("MediPack");
 	exits = GameObject.FindGameObjectsWithTag("Exit");
 	supply = GameObject.FindGameObjectsWithTag("Supplies");
-	survivor = GameObject.FindGameObjectsWithTag("Survivor");
+	humanM = GameObject.FindGameObjectsWithTag("Survivor");
+	humanF = GameObject.FindGameObjectsWithTag("Survivor");
+	cat = GameObject.FindGameObjectsWithTag("Survivor");
+	dog = GameObject.FindGameObjectsWithTag("Survivor");
 	
 	oxygenStyle = GUIStyle();
 	oxygenStyle.normal.background = oxygenTexture;
@@ -71,11 +95,29 @@ function Awake(){
 	objMedipackStyleEmpty = GUIStyle();
 	objMedipackStyleEmpty.normal.background = objMedipackTextureEmpty;
 	
-	objSurvivorStyleFull = GUIStyle();
-	objSurvivorStyleFull.normal.background = objSurvivorTextureFull;
+	objHumanMStyleFull = GUIStyle();
+	objHumanMStyleFull.normal.background = objHumanMTextureFull;
 	
-	objSurvivorStyleEmpty = GUIStyle();
-	objSurvivorStyleEmpty.normal.background = objSurvivorTextureEmpty;
+	objHumanMStyleEmpty = GUIStyle();
+	objHumanMStyleEmpty.normal.background = objHumanMTextureEmpty;
+	
+	objHumanFStyleFull = GUIStyle();
+	objHumanFStyleFull.normal.background = objHumanFTextureFull;
+	
+	objHumanFStyleEmpty = GUIStyle();
+	objHumanFStyleEmpty.normal.background = objHumanFTextureEmpty;
+	
+	objCatStyleFull = GUIStyle();
+	objCatStyleFull.normal.background = objCatTextureFull;
+	
+	objCatStyleEmpty = GUIStyle();
+	objCatStyleEmpty.normal.background = objCatTextureEmpty;
+	
+	objDogStyleFull = GUIStyle();
+	objDogStyleFull.normal.background = objDogTextureFull;
+	
+	objDogStyleEmpty = GUIStyle();
+	objDogStyleEmpty.normal.background = objDogTextureEmpty;
 	
 	/*mmBackgroundTexture = Texture2D(1, 1);
 	mmBackgroundTexture.SetPixel(0, 0, Color(1, 1, 1, 0.5));
@@ -116,8 +158,17 @@ function Awake(){
 	arrowSupplyStyle = GUIStyle();
 	arrowSupplyStyle.normal.background = arrowSupplyTexture;
 	
-	arrowSurvivorStyle = GUIStyle();
-	arrowSurvivorStyle.normal.background = arrowSurvivorTexture;
+	arrowHumanMStyle = GUIStyle();
+	arrowHumanMStyle.normal.background = arrowHumanMTexture;
+	
+	arrowHumanFStyle = GUIStyle();
+	arrowHumanFStyle.normal.background = arrowHumanFTexture;
+	
+	arrowCatStyle = GUIStyle();
+	arrowCatStyle.normal.background = arrowCatTexture;
+	
+	arrowDogStyle = GUIStyle();
+	arrowDogStyle.normal.background = arrowDogTexture;
 	
 	damageIndicatorStyle = GUIStyle();
 	damageIndicatorStyle.normal.background = damageIndicatorTexture;
@@ -215,8 +266,17 @@ function OnGUI(){
 			else if(ObjectiveCollect._this.getAppearances()[i] == "MediPack"){
 				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objMedipackStyleEmpty : objMedipackStyleFull);
 			}
-			else if(ObjectiveCollect._this.getAppearances()[i] == "Survivor"){
-				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objSurvivorStyleEmpty : objSurvivorStyleFull);
+			else if(ObjectiveCollect._this.getAppearances()[i] == "HumanM"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objHumanMStyleEmpty : objHumanMStyleFull);
+			}
+			else if(ObjectiveCollect._this.getAppearances()[i] == "HumanF"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objHumanFStyleEmpty : objHumanFStyleFull);
+			}
+			else if(ObjectiveCollect._this.getAppearances()[i] == "Cat"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objCatStyleEmpty : objCatStyleFull);
+			}
+			else if(ObjectiveCollect._this.getAppearances()[i] == "Dog"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objDogStyleEmpty : objDogStyleFull);
 			}
 			
 			GUI.Box(new Rect(0, h * i, w, h), GUIContent.none, appearance);
@@ -232,7 +292,10 @@ function OnGUI(){
 	
 	drawArrows(medi, h, w, hh, hw, arrowMediStyle);
 	drawArrows(supply, h, w, hh, hw, arrowSupplyStyle);
-	drawArrows(survivor, h, w, hh, hw, arrowSurvivorStyle);
+	drawArrows(humanM, h, w, hh, hw, arrowHumanFStyle);
+	drawArrows(humanF, h, w, hh, hw, arrowHumanMStyle);
+	drawArrows(cat, h, w, hh, hw, arrowCatStyle);
+	drawArrows(dog, h, w, hh, hw, arrowDogStyle);
 	
 	if(ObjectiveCollect._this.isComplete()){
 		drawArrows(exits, h, w, hh, hw, arrowExitStyle);
