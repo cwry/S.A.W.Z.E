@@ -128,8 +128,9 @@ ModelImporter:
     400120: spline2
     400122: spline3
     4300000: polySurface2_1_oPP
-    7400000: Take 001
+    7400000: survivor2_idle
     9500000: //RootNode
+    11100000: //RootNode
     13700000: polySurface2_1_oPP
   materials:
     importMaterials: 1
@@ -137,7 +138,7 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationCompression: 1
@@ -146,7 +147,157 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: survivor2_idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: ikHandle3
+        weight: 1
+      - path: ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: nurbsCircle2/nurbsCircle3/nurbsCircle4
+        weight: 1
+      - path: nurbsCircle2/nurbsCircle5
+        weight: 1
+      - path: nurbsCircle2/nurbsCircle6
+        weight: 1
+      - path: nurbsCircle2/nurbsCircle9
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle8
+        weight: 1
+      - path: pelvis
+        weight: 1
+      - path: pelvis/L_leg
+        weight: 1
+      - path: pelvis/L_leg/L_knee
+        weight: 1
+      - path: pelvis/L_leg/L_knee/L_footankle
+        weight: 1
+      - path: pelvis/L_leg/L_knee/L_footankle/L_footbase
+        weight: 1
+      - path: pelvis/L_leg/L_knee/L_footankle/L_footbase/L_footend
+        weight: 1
+      - path: pelvis/R_leg
+        weight: 1
+      - path: pelvis/R_leg/R_knee
+        weight: 1
+      - path: pelvis/R_leg/R_knee/R_footankle
+        weight: 1
+      - path: pelvis/R_leg/R_knee/R_footankle/R_footbase
+        weight: 1
+      - path: pelvis/R_leg/R_knee/R_footankle/R_footbase/R_footend
+        weight: 1
+      - path: pelvis/spline1
+        weight: 1
+      - path: pelvis/spline1/spline2
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck/headbase
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck/headbase/hairbase
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck/headbase/hairbase/hairend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck/headbase/headend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck/jaw
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_index
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_index/L_indexend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_little
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_little/L_littleend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_middle
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_middle/L_middleend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_ring
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_ring/L_ringend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_thumb
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/L_uparm/L_ankle/L_wrist/L_thumb/L_thumbend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_index
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_index/R_indexend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_little
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_little/R_littleend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_middle
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_middle/R_middleend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_ring
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_ring/R_ringend
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_thumb
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/R_uparm/R_ankle/R_wrist/R_thumb/R_thumbend
+        weight: 1
+      - path: polySurface2_1_oPP
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -182,6 +333,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
