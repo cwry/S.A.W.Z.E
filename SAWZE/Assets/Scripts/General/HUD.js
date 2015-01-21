@@ -38,6 +38,10 @@ private var arrowSupplyStyle : GUIStyle;
 var arrowSurvivorTexture : Texture2D;
 private var arrowSurvivorStyle : GUIStyle;
 
+var damageIndicatorTexture : Texture2D;
+private var damageIndicatorStyle : GUIStyle;
+private var damageIndicatorAlpha : float;
+
 private var medi : GameObject[];
 private var exits : GameObject[];
 private var supply : GameObject[];
@@ -114,6 +118,10 @@ function Awake(){
 	
 	arrowSurvivorStyle = GUIStyle();
 	arrowSurvivorStyle.normal.background = arrowSurvivorTexture;
+	
+	damageIndicatorStyle = GUIStyle();
+	damageIndicatorStyle.normal.background = damageIndicatorTexture;
+	damageIndicatorAlpha = 0;
 }
 
 function OnGUI(){
@@ -129,6 +137,33 @@ function OnGUI(){
 		GUI.EndGroup();
 	GUI.EndGroup();
 	
+	
+	if(Player._this.isInCloud()){
+		damageIndicatorAlpha = Mathf.Lerp(damageIndicatorAlpha, 1, Time.deltaTime * 3);
+	}else{
+		damageIndicatorAlpha = Mathf.Lerp(damageIndicatorAlpha, 0, Time.deltaTime * 3);
+	}
+	
+	GUI.color.a = damageIndicatorAlpha;
+	
+	
+	var fx : float = (1 + Mathf.Sin(Time.realtimeSinceStartup * 4)) / 2;
+	var fy : float = (1 - fx) * 0.1;
+	fx *= 0.1;
+		
+	h = Screen.height / 8;
+	w = h;
+		
+	var fw : float = w * fx;
+	var fh : float = h * fy;
+		
+	var xo = w + 20 + fw / 2;
+	var yo = 10 + fh / 2;
+
+	
+	GUI.Box(new Rect(xo, yo, w - fw, h - fh), GUIContent.none, damageIndicatorStyle);
+	
+	GUI.color.a = 1;
 	
 	/*h = Screen.height / 4;
 	w = h;
@@ -166,7 +201,7 @@ function OnGUI(){
 	*/
 	//Arrows
 	
-	h = Screen.height / 12;
+	h = Screen.height / 8;
 	w = h / objShoppingTextureFull.height * objShoppingTextureFull.width;
 	var num = ObjectiveCollect._this.getCompletion().Length;
 	

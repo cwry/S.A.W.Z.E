@@ -9,6 +9,7 @@ private var model : GameObject;
 
 
 function Start () {
+	numSlow = 0;
 	isSlow = false;
 	tileMap = TileMap._this;
 	nextTile = Vector2(Mathf.Round(gameObject.transform.position.x), Mathf.Round(gameObject.transform.position.y));

@@ -2,7 +2,7 @@
 
 var slowDown : float;
 
-function OnTriggerEnter2D(coll : Collider2D){
+function OnTriggerStay2D(coll : Collider2D){
 	if(coll.gameObject.name == "Player" && !coll.GetComponent(PlayerController).isOnSlow()){
 		Player._this.gameObject.SendMessage("setSlow", true); 
 		Player._this.gameObject.SendMessage("addSpeed", -slowDown); 

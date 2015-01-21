@@ -7,6 +7,7 @@ var oxygen : float = 1;
 
 private var superAntidote : boolean;
 private var gotHurt : boolean = false;
+private var inCloud : boolean = false;
 private var lastChain : Transform;
 
 
@@ -29,6 +30,18 @@ function hurt(amt : float){
 		oxygen += amt;
 	}
 	gotHurt = true;
+}
+
+function isHurt(){
+	return gotHurt;
+}
+
+function setCloud(bool : boolean){
+	inCloud = bool;
+}
+
+function isInCloud(){
+	return inCloud;
 }
 
 function gotAntidote(args){
