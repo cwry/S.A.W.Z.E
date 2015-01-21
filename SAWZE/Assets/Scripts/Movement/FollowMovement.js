@@ -5,7 +5,7 @@ var target : Transform;
 var keepDistance : float;
 
 private var tileMap : TileMap;
-private var dir : Vector2;
+var dir : Vector2;
 private var nextTile : Vector3;
 private var model : GameObject;
 
@@ -41,5 +41,11 @@ function Update () {
 	var dist : Vector2 = target.transform.position - gameObject.transform.position; 
 	if(Mathf.Abs(dist.x) > keepDistance || Mathf.Abs(dist.y) > keepDistance){
 		gameObject.transform.position += dir * speed * Time.deltaTime;
+		
+		if(!model.animation.isPlaying){
+			model.animation.Play();
+		}
+	}else if(model.animation.isPlaying){
+		model.animation.Stop();
 	}
 }

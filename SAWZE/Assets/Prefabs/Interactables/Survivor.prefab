@@ -4083,7 +4083,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 52b68b4bb66e32e458b4f15de95e59bb, type: 3}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 1
 --- !u!114 &11400000
@@ -4100,6 +4100,7 @@ MonoBehaviour:
   speed: 2
   target: {fileID: 0}
   keepDistance: 1
+  dir: {x: 0, y: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

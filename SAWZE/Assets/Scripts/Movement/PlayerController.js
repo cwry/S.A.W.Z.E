@@ -69,6 +69,12 @@ function Update () {
 		nextTile += dir;
 	}
 	
+	if(dir == Vector2.zero){
+		model.animation.Stop();
+	}else if(!model.animation.isPlaying){
+		model.animation.Play();
+	}
+	
 	MovementUtil.handleRotation(gameObject, dir);
 	gameObject.transform.position += dir * speed * Time.deltaTime;
 }
