@@ -16,7 +16,7 @@ function OnTriggerEnter2D(other: Collider2D){
 }
 
 function Update(){
-	if(triggered && (Time.realtimeSinceStartup - lastActivation >= minDuration) && Input.anyKey){ //minimum duration reached and key pressed?
+	if(triggered && (Time.realtimeSinceStartup - lastActivation >= minDuration) && Input.anyKey){ 
 		message.GetComponent(Canvas).enabled = false;
 		Time.timeScale = 1;
 		Destroy(gameObject);
