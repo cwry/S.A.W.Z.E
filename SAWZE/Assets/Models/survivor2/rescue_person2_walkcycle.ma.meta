@@ -130,6 +130,7 @@ ModelImporter:
     4300000: polySurface2_1_oPP
     7400000: Take 001
     9500000: //RootNode
+    11100000: //RootNode
     13700000: polySurface2_1_oPP
   materials:
     importMaterials: 1
@@ -137,7 +138,7 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationCompression: 1
@@ -182,6 +183,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
