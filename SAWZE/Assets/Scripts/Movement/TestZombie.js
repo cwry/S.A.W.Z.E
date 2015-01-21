@@ -25,7 +25,7 @@ function setGoal(goal : Vector2){
 	manualGoal = goal;
 }
 
-function setSpeed(amt){
+function setSpeed(amt : float){
 	speed = amt;
 }
 

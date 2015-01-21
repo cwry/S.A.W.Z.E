@@ -29,22 +29,29 @@ private var mmPlayerStyle : GUIStyle;
 private var mmExitTexture : Texture2D;
 private var mmExitStyle : GUIStyle;*/
 
-private var arrowCollectibleTexture : Texture2D;
-private var arrowCollectibleStyle : GUIStyle;
-private var arrowExitTexture : Texture2D;
+var arrowMediTexture : Texture2D;
+private var arrowMediStyle : GUIStyle;
+var arrowExitTexture : Texture2D;
 private var arrowExitStyle : GUIStyle;
+var arrowSupplyTexture : Texture2D;
+private var arrowSupplyStyle : GUIStyle;
+var arrowSurvivorTexture : Texture2D;
+private var arrowSurvivorStyle : GUIStyle;
+
+private var medi : GameObject[];
+private var exits : GameObject[];
+private var supply : GameObject[];
+private var survivor : GameObject[];
 
 function Awake(){
-	//tentative
-	//oxygenTexture = Texture2D(1, 1);
-	//oxygenTexture.SetPixel(0, 0, Color(1, 0, 0, 1));
-	//oxygenTexture.Apply();
+	medi = GameObject.FindGameObjectsWithTag("MediPack");
+	exits = GameObject.FindGameObjectsWithTag("Exit");
+	supply = GameObject.FindGameObjectsWithTag("Supplies");
+	survivor = GameObject.FindGameObjectsWithTag("Survivor");
+	
 	oxygenStyle = GUIStyle();
 	oxygenStyle.normal.background = oxygenTexture;
-	
-	//backgroundTexture = Texture2D(1, 1);
-	//backgroundTexture.SetPixel(0, 0, Color(0, 0, 0, 1));
-	//backgroundTexture.Apply();
+
 	backgroundStyle = GUIStyle();
 	backgroundStyle.normal.background = backgroundTexture;
 	
@@ -96,20 +103,17 @@ function Awake(){
 	mmExitStyle = GUIStyle();
 	mmExitStyle.normal.background = mmExitTexture;*/
 	
+	arrowMediStyle = GUIStyle();
+	arrowMediStyle.normal.background = arrowMediTexture;
 	
-	
-	arrowCollectibleTexture = Texture2D(1, 1);
-	arrowCollectibleTexture.SetPixel(0, 0, Color(0, 0, 1, 0.75));
-	arrowCollectibleTexture.Apply();
-	arrowCollectibleStyle = GUIStyle();
-	arrowCollectibleStyle.normal.background = arrowCollectibleTexture;
-	
-	arrowExitTexture = Texture2D(1, 1);
-	arrowExitTexture.SetPixel(0, 0, Color(0.5, 0, 0, 0.75));
-	arrowExitTexture.Apply();
 	arrowExitStyle = GUIStyle();
 	arrowExitStyle.normal.background = arrowExitTexture;
-	//
+	
+	arrowSupplyStyle = GUIStyle();
+	arrowSupplyStyle.normal.background = arrowSupplyTexture;
+	
+	arrowSurvivorStyle = GUIStyle();
+	arrowSurvivorStyle.normal.background = arrowSurvivorTexture;
 }
 
 function OnGUI(){
@@ -124,9 +128,6 @@ function OnGUI(){
 			GUI.Box(new Rect(0, -offset, w, h), GUIContent.none, oxygenStyle);
 		GUI.EndGroup();
 	GUI.EndGroup();
-	
-	var collectibles = GameObject.FindGameObjectsWithTag("Collectible");
-	var exits = GameObject.FindGameObjectsWithTag("Exit");
 	
 	
 	/*h = Screen.height / 4;
@@ -188,44 +189,27 @@ function OnGUI(){
 	
 	GUI.EndGroup();
 	
-	
 	h = Screen.height / 16;
 	w = h;
 	
 	var hh = h * 0.5;
 	var hw = w * 0.5;
 	
-	for(var coll in collectibles){
-		var pos = Camera.mainCamera.WorldToScreenPoint(coll.transform.position);
-		
-		var shouldDraw = false;
-		
-		if(pos.x < hw){
-			pos.x = hw;
-			shouldDraw = true;
-		}else if(pos.x > Screen.width - hw){
-			pos.x = Screen.width - hw;		
-			shouldDraw = true;
-		}
-		
-		if(pos.x < hh){
-			pos.y = hh;
-			shouldDraw = true;
-		}else if(pos.y > Screen.height - hh){
-			pos.y = Screen.height - hh;		
-			shouldDraw = true;
-		}
-
-		if(shouldDraw){
-			GUI.Box(new Rect(pos.x - w * 0.5, Screen.height - pos.y - h * 0.5, w, h), GUIContent.none, arrowCollectibleStyle);
-		}
-	}
+	drawArrows(medi, h, w, hh, hw, arrowMediStyle);
+	drawArrows(supply, h, w, hh, hw, arrowSupplyStyle);
+	drawArrows(survivor, h, w, hh, hw, arrowSurvivorStyle);
 	
 	if(ObjectiveCollect._this.isComplete()){
-		for(var exit in exits){
-			pos = Camera.mainCamera.WorldToScreenPoint(exit.transform.position);
+		drawArrows(exits, h, w, hh, hw, arrowExitStyle);
+	}
+}
+
+function drawArrows(list : GameObject[], h : float, w: float, hh : float, hw : float, style : GUIStyle){
+	for(var e in list){
+		if(e != null){
+			var pos = Camera.main.WorldToScreenPoint(e.transform.position);
 		
-			shouldDraw = false;
+			var shouldDraw = false;
 		
 			if(pos.x < hw){
 				pos.x = hw;
@@ -235,7 +219,7 @@ function OnGUI(){
 				shouldDraw = true;
 			}
 		
-			if(pos.x < hh){
+			if(pos.y < hh){
 				pos.y = hh;
 				shouldDraw = true;
 			}else if(pos.y > Screen.height - hh){
@@ -244,7 +228,7 @@ function OnGUI(){
 			}
 
 			if(shouldDraw){
-				GUI.Box(new Rect(pos.x - w * 0.5, Screen.height - pos.y - h * 0.5, w, h), GUIContent.none, arrowExitStyle);
+				GUI.Box(new Rect(pos.x - w * 0.5, Screen.height - pos.y - h * 0.5, w, h), GUIContent.none, style);
 			}
 		}
 	}
