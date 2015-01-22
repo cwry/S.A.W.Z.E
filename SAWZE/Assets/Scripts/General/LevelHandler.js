@@ -16,6 +16,12 @@ static function load(){
 	Application.LoadLevel(_this.levels[_this.current]);
 }
 
+static function setCurrent(curr : int){
+	if(_this != null){
+		_this.current = curr;
+	}
+}
+
 static function onWin(){
 	if(_this != null){
 		if(_this.current + 1 < _this.levels.Length){

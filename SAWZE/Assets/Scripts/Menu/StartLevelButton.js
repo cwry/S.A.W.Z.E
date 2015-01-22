@@ -1,7 +1,8 @@
 ﻿#pragma strict
 
-var level : String;
+var level : int;
 
 function run(){
-	Application.LoadLevel(level);
+	LevelHandler.setCurrent(level);
+	LevelHandler.load();
 }
