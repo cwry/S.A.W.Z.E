@@ -46406,7 +46406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c6d6d83c461f943b98fe9e5bb0beeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contamination: -.0350000001
+  contamination: -.0399999991
   oxygen: .75
   antidoteParticle: {fileID: 578119034}
 --- !u!114 &1331601044
@@ -70275,7 +70275,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 484f5956599a20445bccd9f3308d32b8, type: 2}
       propertyPath: contamination
-      value: -.0350000001
+      value: -.0399999991
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 484f5956599a20445bccd9f3308d32b8, type: 2}
       propertyPath: speed
