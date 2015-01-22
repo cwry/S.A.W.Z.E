@@ -108,8 +108,9 @@ ModelImporter:
     400100: tail5
     400102: tail6
     4300000: chiwawa
-    7400000: Take 001
+    7400000: Walk
     9500000: //RootNode
+    11100000: //RootNode
     13700000: chiwawa
   materials:
     importMaterials: 1
@@ -117,16 +118,146 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chiwawa
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: ikHandle3
+        weight: 1
+      - path: ikHandle4
+        weight: 1
+      - path: ikHandle5
+        weight: 1
+      - path: LB_ik
+        weight: 1
+      - path: LF_ik
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/LB_Leg
+        weight: 1
+      - path: Pelvis/LB_Leg/LB_knee
+        weight: 1
+      - path: Pelvis/LB_Leg/LB_knee/LB_knee2
+        weight: 1
+      - path: Pelvis/LB_Leg/LB_knee/LB_knee2/LB_foot
+        weight: 1
+      - path: Pelvis/LB_Leg/LB_knee/LB_knee2/LB_foot/LB_toe
+        weight: 1
+      - path: Pelvis/RB_Reg
+        weight: 1
+      - path: Pelvis/RB_Reg/RB_knee
+        weight: 1
+      - path: Pelvis/RB_Reg/RB_knee/RB_knee2
+        weight: 1
+      - path: Pelvis/RB_Reg/RB_knee/RB_knee2/RB_foot
+        weight: 1
+      - path: Pelvis/RB_Reg/RB_knee/RB_knee2/RB_foot/RB_toe
+        weight: 1
+      - path: Pelvis/Spline1
+        weight: 1
+      - path: Pelvis/Spline1/Spline2
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/LF_Leg
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/LF_Leg/LF_elbow
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/LF_Leg/LF_elbow/LF_foot
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/LF_Leg/LF_elbow/LF_foot/LF_toe
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase/HeadEnd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase/L_EarBase
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase/L_EarBase/L_EarBase 1
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase/L_EarBase/L_EarBase 1/L_EarEnd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase/R_EarBase
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase/R_EarBase/R_EarBase 1
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Neck/HeadBase/R_EarBase/R_EarBase 1/R_EarEnd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/RF_Reg
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/RF_Reg/RF_elbow
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/RF_Reg/RF_elbow/RF_foot
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/RF_Reg/RF_elbow/RF_foot/RF_toe
+        weight: 1
+      - path: Pelvis/tail1
+        weight: 1
+      - path: Pelvis/tail1/tail2
+        weight: 1
+      - path: Pelvis/tail1/tail2/tail3
+        weight: 1
+      - path: Pelvis/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Pelvis/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: Pelvis/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: RB_ik
+        weight: 1
+      - path: RF_ik
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -162,6 +293,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 

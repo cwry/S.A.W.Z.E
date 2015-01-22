@@ -72,10 +72,10 @@ function Awake(){
 	medi = GameObject.FindGameObjectsWithTag("MediPack");
 	exits = GameObject.FindGameObjectsWithTag("Exit");
 	supply = GameObject.FindGameObjectsWithTag("Supplies");
-	humanM = GameObject.FindGameObjectsWithTag("Survivor");
-	humanF = GameObject.FindGameObjectsWithTag("Survivor");
-	cat = GameObject.FindGameObjectsWithTag("Survivor");
-	dog = GameObject.FindGameObjectsWithTag("Survivor");
+	humanM = GameObject.FindGameObjectsWithTag("HumanM");
+	humanF = GameObject.FindGameObjectsWithTag("HumanF");
+	cat = GameObject.FindGameObjectsWithTag("Cat");
+	dog = GameObject.FindGameObjectsWithTag("Dog");
 	
 	oxygenStyle = GUIStyle();
 	oxygenStyle.normal.background = oxygenTexture;
@@ -284,7 +284,7 @@ function OnGUI(){
 	
 	GUI.EndGroup();
 	
-	h = Screen.height / 16;
+	h = Screen.height / 14;
 	w = h;
 	
 	var hh = h * 0.5;
@@ -292,8 +292,8 @@ function OnGUI(){
 	
 	drawArrows(medi, h, w, hh, hw, arrowMediStyle);
 	drawArrows(supply, h, w, hh, hw, arrowSupplyStyle);
-	drawArrows(humanM, h, w, hh, hw, arrowHumanFStyle);
-	drawArrows(humanF, h, w, hh, hw, arrowHumanMStyle);
+	drawArrows(humanM, h, w, hh, hw, arrowHumanMStyle);
+	drawArrows(humanF, h, w, hh, hw, arrowHumanFStyle);
 	drawArrows(cat, h, w, hh, hw, arrowCatStyle);
 	drawArrows(dog, h, w, hh, hw, arrowDogStyle);
 	

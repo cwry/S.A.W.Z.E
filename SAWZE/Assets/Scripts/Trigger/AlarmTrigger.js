@@ -8,6 +8,8 @@ var pressedMat : Material;
 var normalMat : Material;
 var duration : float;
 
+private var activated : boolean = false;
+
 private var model : GameObject;
 
 function Start(){
@@ -16,13 +18,16 @@ function Start(){
 
 
 function OnTriggerEnter2D(coll: Collider2D){
-	for(var zombie in GameObject.FindGameObjectsWithTag("Enemy")){
-		zombie.SendMessage("setGoal", rallyingPoint);
+	if(!activated){
+		for(var zombie in GameObject.FindGameObjectsWithTag("Enemy")){
+			zombie.SendMessage("setGoal", rallyingPoint);
+		}
+		activate(duration);
 	}
-	activate(duration);
 }
 
 function activate(duration : float){
+	activated = true;
 	alarm.SendMessage("activate");
 	model.GetComponent(MeshFilter).mesh = pressedMesh;
 	model.renderer.material = pressedMat;
@@ -35,6 +40,7 @@ function activate(duration : float){
 }
 
 function deactivate(){
+	activated = false;
 	alarm.SendMessage("deactivate");
 	model.GetComponent(MeshFilter).mesh = normalMesh;
 	model.renderer.material = normalMat;

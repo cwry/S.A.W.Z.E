@@ -14,8 +14,8 @@ GameObject:
   - 114: {fileID: 11400002}
   - 50: {fileID: 5000000}
   m_Layer: 0
-  m_Name: Survivor
-  m_TagString: Survivor
+  m_Name: SurvivorM
+  m_TagString: HumanM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4079,8 +4079,9 @@ Animation:
   m_GameObject: {fileID: 122774}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 52b68b4bb66e32e458b4f15de95e59bb, type: 3}
+  m_Animation: {fileID: 7400000, guid: a2e6f6c5e5b8e874a983b2c361315dc7, type: 3}
   m_Animations:
+  - {fileID: 7400000, guid: a2e6f6c5e5b8e874a983b2c361315dc7, type: 3}
   - {fileID: 7400000, guid: 52b68b4bb66e32e458b4f15de95e59bb, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1

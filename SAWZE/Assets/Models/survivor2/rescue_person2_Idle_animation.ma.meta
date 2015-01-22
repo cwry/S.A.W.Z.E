@@ -128,7 +128,7 @@ ModelImporter:
     400120: spline2
     400122: spline3
     4300000: polySurface2_1_oPP
-    7400000: survivor2_idle
+    7400000: Idle
     9500000: //RootNode
     11100000: //RootNode
     13700000: polySurface2_1_oPP
@@ -145,15 +145,15 @@ ModelImporter:
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: survivor2_idle
+      name: Idle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 24
-      wrapMode: 0
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0

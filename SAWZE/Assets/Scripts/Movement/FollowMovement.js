@@ -43,11 +43,9 @@ function Update () {
 		gameObject.transform.position += dir * speed * Time.deltaTime;
 		
 		if(!model.animation["Walk"].enabled){
-			Debug.Log("yo");
 			model.animation.CrossFade("Walk", 0.2);
 		}
 	}else if(model.animation["Walk"].enabled){
-		Debug.Log("ho");
 		model.animation.CrossFade("Idle", 0.2);
 	}
 }
