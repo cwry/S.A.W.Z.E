@@ -13084,7 +13084,7 @@ Transform:
   m_GameObject: {fileID: 282838990}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: -.707106829}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .125, y: .125, z: .125}
+  m_LocalScale: {x: .119999997, y: .119999997, z: .119999997}
   m_Children:
   - {fileID: 1577508593}
   - {fileID: 866192181}
@@ -15896,7 +15896,7 @@ Transform:
   m_GameObject: {fileID: 332912803}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: -.707106829}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .125, y: .125, z: .125}
+  m_LocalScale: {x: .119999997, y: .119999997, z: .119999997}
   m_Children:
   - {fileID: 1998992671}
   - {fileID: 1381633156}
@@ -22052,7 +22052,7 @@ Transform:
   m_GameObject: {fileID: 447965238}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: -.707106829}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .125, y: .125, z: .125}
+  m_LocalScale: {x: .119999997, y: .119999997, z: .119999997}
   m_Children:
   - {fileID: 1490484824}
   - {fileID: 1563767382}
@@ -33820,15 +33820,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[1]
-      value: SurvivorM2
+      value: HumanM
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[2]
-      value: SurvivorF
+      value: HumanF
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[3]
-      value: SurvivorF2
+      value: HumanF
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[4]
@@ -48459,6 +48459,10 @@ Prefab:
       propertyPath: rallyingPoint.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11494728, guid: c3b6f8e1d9f02e64499452f9d673a2d0, type: 2}
+      propertyPath: duration
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3b6f8e1d9f02e64499452f9d673a2d0, type: 2}
   m_RootGameObject: {fileID: 1973775107}
@@ -51017,9 +51021,9 @@ MonoBehaviour:
   - {fileID: 175846371}
   appearances:
   - Cat
-  - SurvivorM2
-  - SurvivorF
-  - SurvivorF2
+  - HumanM
+  - HumanF
+  - HumanF
   - Dog
 --- !u!4 &1008877752
 Transform:
@@ -81318,7 +81322,7 @@ Transform:
   m_GameObject: {fileID: 1627165156}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: -.707106829}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .125, y: .125, z: .125}
+  m_LocalScale: {x: .119999997, y: .119999997, z: .119999997}
   m_Children:
   - {fileID: 724308960}
   - {fileID: 1047494962}
@@ -102376,7 +102380,7 @@ MonoBehaviour:
   normalMesh: {fileID: 4300000, guid: 0f2780f19cd5966459cc456649fed89f, type: 3}
   pressedMat: {fileID: 2100000, guid: dfd00000fb2a5754eb14244ac337c210, type: 2}
   normalMat: {fileID: 2100000, guid: e7e89d97d85a65e459e7f07c088f00b5, type: 2}
-  duration: 10
+  duration: 5
 --- !u!1 &1974363231
 GameObject:
   m_ObjectHideFlags: 0
@@ -103290,7 +103294,7 @@ GameObject:
   - 33: {fileID: 1994284348}
   - 23: {fileID: 1994284347}
   m_Layer: 0
-  m_Name: Model
+  m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

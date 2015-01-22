@@ -22,6 +22,12 @@ static function setCurrent(curr : int){
 	}
 }
 
+function Update(){
+	if(Input.GetKeyDown("backspace")){
+		Application.LoadLevel("Menu");
+	}
+}
+
 static function onWin(){
 	if(_this != null){
 		if(_this.current + 1 < _this.levels.Length){
