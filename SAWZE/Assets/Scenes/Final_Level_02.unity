@@ -91661,6 +91661,7 @@ GameObject:
   - 4: {fileID: 1571099903}
   - 61: {fileID: 1571099905}
   - 114: {fileID: 1571099904}
+  - 114: {fileID: 1571099906}
   m_Layer: 0
   m_Name: MediPack
   m_TagString: MediPack
@@ -91707,6 +91708,19 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!114 &1571099906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11486868, guid: c088fd3af8800474aab86ccf9873fa31,
+    type: 2}
+  m_PrefabInternal: {fileID: 1334290645}
+  m_GameObject: {fileID: 1571099902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337172bfb8f272542b49187ab0d15f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
 --- !u!1 &1572986167
 GameObject:
   m_ObjectHideFlags: 0
@@ -95376,11 +95390,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419748, guid: 0865e58a5ff482e43801fb19598c23bf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.70300007
+      value: 7.73000002
       objectReference: {fileID: 0}
     - target: {fileID: 419748, guid: 0865e58a5ff482e43801fb19598c23bf, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -.261999995
+      value: -.160999998
       objectReference: {fileID: 0}
     - target: {fileID: 419748, guid: 0865e58a5ff482e43801fb19598c23bf, type: 2}
       propertyPath: m_LocalRotation.x
@@ -109782,7 +109796,7 @@ Transform:
   m_PrefabInternal: {fileID: 1658850517}
   m_GameObject: {fileID: 1870090402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.75, y: 7.70300007, z: -.261999995}
+  m_LocalPosition: {x: 25.75, y: 7.73000002, z: -.160999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 43084318}

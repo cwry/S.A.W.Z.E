@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11486868}
   m_Layer: 0
   m_Name: MediPack
   m_TagString: MediPack
@@ -110,6 +111,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: {fileID: 0}
   sound: {fileID: 8300000, guid: 122fb3c265b271d45aaf864b667288d9, type: 3}
+--- !u!114 &11486868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337172bfb8f272542b49187ab0d15f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

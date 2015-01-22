@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 496966}
   - 61: {fileID: 6196964}
   - 114: {fileID: 11496964}
+  - 114: {fileID: 11472142}
   m_Layer: 0
   m_Name: ShoppingBag
   m_TagString: Supplies
@@ -97,6 +98,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
+--- !u!114 &11472142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337172bfb8f272542b49187ab0d15f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
 --- !u!114 &11496964
 MonoBehaviour:
   m_ObjectHideFlags: 1
