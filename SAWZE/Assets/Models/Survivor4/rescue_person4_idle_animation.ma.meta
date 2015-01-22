@@ -88,8 +88,9 @@ ModelImporter:
     400080: spline2
     400082: spline3
     4300000: polySurface7_2
-    7400000: Take 001
+    7400000: Idle
     9500000: //RootNode
+    11100000: //RootNode
     13700000: polySurface7_2
   materials:
     importMaterials: 1
@@ -97,16 +98,129 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ikHandle9
+        weight: 1
+      - path: ikHandle10
+        weight: 1
+      - path: ikHandle11
+        weight: 1
+      - path: ikHandle12
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle8
+        weight: 1
+      - path: nurbsCircle8/nurbsCircle9
+        weight: 1
+      - path: nurbsCircle8/nurbsCircle9/nurbsCircle10
+        weight: 1
+      - path: nurbsCircle8/nurbsCircle9/nurbsCircle10/nurbsCircle11
+        weight: 1
+      - path: pelvis
+        weight: 1
+      - path: pelvis/joint17
+        weight: 1
+      - path: pelvis/joint17/joint18
+        weight: 1
+      - path: pelvis/joint17/joint18/joint19
+        weight: 1
+      - path: pelvis/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: pelvis/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: pelvis/joint27
+        weight: 1
+      - path: pelvis/joint27/joint18 1
+        weight: 1
+      - path: pelvis/joint27/joint18 1/joint19 1
+        weight: 1
+      - path: pelvis/joint27/joint18 1/joint19 1/joint20 1
+        weight: 1
+      - path: pelvis/joint27/joint18 1/joint19 1/joint20 1/joint21 1
+        weight: 1
+      - path: pelvis/spline1
+        weight: 1
+      - path: pelvis/spline1/spline2
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/neck/head
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/joint12
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/joint12/joint13
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/joint12/joint13/joint14
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder/joint12/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/joint12 1
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/joint12 1/joint13 1
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/joint12 1/joint13 1/joint14
+          1
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/joint12 1/joint13 1/joint14
+          1/joint15 1
+        weight: 1
+      - path: pelvis/spline1/spline2/spline3/shoulder1/joint12 1/joint13 1/joint14
+          1/joint15 1/joint16 1
+        weight: 1
+      - path: polySurface7_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -142,6 +256,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
