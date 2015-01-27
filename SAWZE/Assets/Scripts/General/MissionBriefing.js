@@ -1,6 +1,10 @@
 ﻿#pragma strict
 
-private var showing;
+var duration : float;
+
+private var showing : boolean;
+private var timeStamp : float;
+private var isSet : boolean = false;
 
 function Awake(){
 	gameObject.GetComponent(Canvas).enabled = true;
@@ -9,7 +13,12 @@ function Awake(){
 }
 
 function Update(){
-	if(showing && Input.anyKey){
+	if(!isSet){
+		timeStamp = Time.realtimeSinceStartup;
+		isSet = true;
+	}
+	
+	if(showing && Input.anyKey && (Time.realtimeSinceStartup - timeStamp >= duration)){
 		showing = false;
 		gameObject.GetComponent(Canvas).enabled = false;
 		Time.timeScale = 1;
