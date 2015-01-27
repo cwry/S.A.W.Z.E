@@ -13,6 +13,10 @@ var objHumanMTextureFull : Texture2D;
 var objHumanMTextureEmpty : Texture2D;
 var objHumanFTextureFull : Texture2D;
 var objHumanFTextureEmpty : Texture2D;
+var objHumanM2TextureFull : Texture2D;
+var objHumanM2TextureEmpty : Texture2D;
+var objHumanF2TextureFull : Texture2D;
+var objHumanF2TextureEmpty : Texture2D;
 var objCatTextureFull : Texture2D;
 var objCatTextureEmpty : Texture2D;
 var objDogTextureFull : Texture2D;
@@ -25,6 +29,10 @@ private var objHumanMStyleFull : GUIStyle;
 private var objHumanMStyleEmpty : GUIStyle;
 private var objHumanFStyleFull : GUIStyle;
 private var objHumanFStyleEmpty : GUIStyle;
+private var objHumanM2StyleFull : GUIStyle;
+private var objHumanM2StyleEmpty : GUIStyle;
+private var objHumanF2StyleFull : GUIStyle;
+private var objHumanF2StyleEmpty : GUIStyle;
 private var objCatStyleFull : GUIStyle;
 private var objCatStyleEmpty : GUIStyle;
 private var objDogStyleFull : GUIStyle;
@@ -51,6 +59,10 @@ var arrowHumanMTexture : Texture2D;
 private var arrowHumanMStyle : GUIStyle;
 var arrowHumanFTexture : Texture2D;
 private var arrowHumanFStyle : GUIStyle;
+var arrowHumanM2Texture : Texture2D;
+private var arrowHumanM2Style : GUIStyle;
+var arrowHumanF2Texture : Texture2D;
+private var arrowHumanF2Style : GUIStyle;
 var arrowCatTexture : Texture2D;
 private var arrowCatStyle : GUIStyle;
 var arrowDogTexture : Texture2D;
@@ -65,6 +77,8 @@ private var exits : GameObject[];
 private var supply : GameObject[];
 private var humanM : GameObject[];
 private var humanF : GameObject[];
+private var humanM2 : GameObject[];
+private var humanF2 : GameObject[];
 private var cat : GameObject[];
 private var dog : GameObject[];
 
@@ -74,6 +88,8 @@ function Awake(){
 	supply = GameObject.FindGameObjectsWithTag("Supplies");
 	humanM = GameObject.FindGameObjectsWithTag("HumanM");
 	humanF = GameObject.FindGameObjectsWithTag("HumanF");
+	humanM2 = GameObject.FindGameObjectsWithTag("HumanM2");
+	humanF2 = GameObject.FindGameObjectsWithTag("HumanF2");
 	cat = GameObject.FindGameObjectsWithTag("Cat");
 	dog = GameObject.FindGameObjectsWithTag("Dog");
 	
@@ -106,6 +122,18 @@ function Awake(){
 	
 	objHumanFStyleEmpty = GUIStyle();
 	objHumanFStyleEmpty.normal.background = objHumanFTextureEmpty;
+	
+	objHumanM2StyleFull = GUIStyle();
+	objHumanM2StyleFull.normal.background = objHumanM2TextureFull;
+	
+	objHumanM2StyleEmpty = GUIStyle();
+	objHumanM2StyleEmpty.normal.background = objHumanM2TextureEmpty;
+	
+	objHumanF2StyleFull = GUIStyle();
+	objHumanF2StyleFull.normal.background = objHumanF2TextureFull;
+	
+	objHumanF2StyleEmpty = GUIStyle();
+	objHumanF2StyleEmpty.normal.background = objHumanF2TextureEmpty;
 	
 	objCatStyleFull = GUIStyle();
 	objCatStyleFull.normal.background = objCatTextureFull;
@@ -163,6 +191,12 @@ function Awake(){
 	
 	arrowHumanFStyle = GUIStyle();
 	arrowHumanFStyle.normal.background = arrowHumanFTexture;
+	
+	arrowHumanM2Style = GUIStyle();
+	arrowHumanM2Style.normal.background = arrowHumanM2Texture;
+	
+	arrowHumanF2Style = GUIStyle();
+	arrowHumanF2Style.normal.background = arrowHumanF2Texture;
 	
 	arrowCatStyle = GUIStyle();
 	arrowCatStyle.normal.background = arrowCatTexture;
@@ -266,11 +300,17 @@ function OnGUI(){
 			else if(ObjectiveCollect._this.getAppearances()[i] == "MediPack"){
 				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objMedipackStyleEmpty : objMedipackStyleFull);
 			}
-			else if(ObjectiveCollect._this.getAppearances()[i] == "HumanM"){
+			else if(ObjectiveCollect._this.getAppearances()[i] == "SurvivorM"){
 				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objHumanMStyleEmpty : objHumanMStyleFull);
 			}
-			else if(ObjectiveCollect._this.getAppearances()[i] == "HumanF"){
+			else if(ObjectiveCollect._this.getAppearances()[i] == "SurvivorF"){
 				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objHumanFStyleEmpty : objHumanFStyleFull);
+			}
+			else if(ObjectiveCollect._this.getAppearances()[i] == "SurvivorM2"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objHumanM2StyleEmpty : objHumanM2StyleFull);
+			}
+			else if(ObjectiveCollect._this.getAppearances()[i] == "SurvivorF2"){
+				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objHumanF2StyleEmpty : objHumanF2StyleFull);
 			}
 			else if(ObjectiveCollect._this.getAppearances()[i] == "Cat"){
 				appearance = (ObjectiveCollect._this.getCompletion()[i] != null ? objCatStyleEmpty : objCatStyleFull);
@@ -294,6 +334,8 @@ function OnGUI(){
 	drawArrows(supply, h, w, hh, hw, arrowSupplyStyle);
 	drawArrows(humanM, h, w, hh, hw, arrowHumanMStyle);
 	drawArrows(humanF, h, w, hh, hw, arrowHumanFStyle);
+	drawArrows(humanM2, h, w, hh, hw, arrowHumanM2Style);
+	drawArrows(humanF2, h, w, hh, hw, arrowHumanF2Style);
 	drawArrows(cat, h, w, hh, hw, arrowCatStyle);
 	drawArrows(dog, h, w, hh, hw, arrowDogStyle);
 	

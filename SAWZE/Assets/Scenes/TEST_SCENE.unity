@@ -3570,7 +3570,7 @@ GameObject:
   - 50: {fileID: 139402160}
   m_Layer: 0
   m_Name: SurvivorM2
-  m_TagString: HumanM
+  m_TagString: HumanM2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6156,6 +6156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e38c05d8d3a5c34f8cf37c09f25332c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duration: 1
 --- !u!114 &234253891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33685,7 +33686,7 @@ GameObject:
   - 50: {fileID: 1154744001}
   m_Layer: 0
   m_Name: SurvivorF2
-  m_TagString: HumanF
+  m_TagString: HumanF2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41977,6 +41978,14 @@ MonoBehaviour:
     type: 3}
   objHumanFTextureEmpty: {fileID: 2800000, guid: afc7bff29482c3c439b523d01c712cb7,
     type: 3}
+  objHumanM2TextureFull: {fileID: 2800000, guid: 38979b9a18711274db3b0439239c0408,
+    type: 3}
+  objHumanM2TextureEmpty: {fileID: 2800000, guid: cd15da5c83808344cb4f289a9c1f48d5,
+    type: 3}
+  objHumanF2TextureFull: {fileID: 2800000, guid: 128150252a5b946479ab6b67a9e977d6,
+    type: 3}
+  objHumanF2TextureEmpty: {fileID: 2800000, guid: 199d3b35e1f46d149be8fa55ec5ff29c,
+    type: 3}
   objCatTextureFull: {fileID: 2800000, guid: 2518caec15d460940b0c5246621d4a8b, type: 3}
   objCatTextureEmpty: {fileID: 2800000, guid: 36b3e0ab1af002349a3e92efb9c70b37, type: 3}
   objDogTextureFull: {fileID: 2800000, guid: 948d873f25fbac340a08a17538e05312, type: 3}
@@ -41986,6 +41995,8 @@ MonoBehaviour:
   arrowSupplyTexture: {fileID: 2800000, guid: 5e9d7c3e3a2d1184eaa8a51ec54252a5, type: 3}
   arrowHumanMTexture: {fileID: 2800000, guid: a12303c5a3dd11d46afcab469fa168ff, type: 3}
   arrowHumanFTexture: {fileID: 2800000, guid: dc7746a3a69a9914cb62ffacf86c1114, type: 3}
+  arrowHumanM2Texture: {fileID: 2800000, guid: 6c38c5a6560c4454eb1a50c6ad36c66f, type: 3}
+  arrowHumanF2Texture: {fileID: 2800000, guid: 7e60a1311c73c194dbaf67b14d3efc1c, type: 3}
   arrowCatTexture: {fileID: 2800000, guid: c33e1702e8afa134285afa1ee6704dfc, type: 3}
   arrowDogTexture: {fileID: 2800000, guid: dd2cb9bdb9d02d0408f782a5450b09a4, type: 3}
   damageIndicatorTexture: {fileID: 2800000, guid: b3d9b315c4e863d4aa76276a49cea3a7,
@@ -46133,12 +46144,12 @@ MonoBehaviour:
   - {fileID: 196045506}
   appearances:
   - MediPack
-  - HumanM
-  - HumanF
-  - HumanM
+  - SurvivorM
+  - SurvivorF
+  - SurvivorM2
   - Dog
   - Cat
-  - HumanF
+  - SurvivorF2
 --- !u!4 &1564296620
 Transform:
   m_ObjectHideFlags: 0
@@ -47320,7 +47331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[1]
-      value: HumanM
+      value: SurvivorM
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: collectibles.Array.data[2]
@@ -47340,11 +47351,11 @@ Prefab:
       objectReference: {fileID: 849696037}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[2]
-      value: HumanF
+      value: SurvivorF
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[3]
-      value: HumanM
+      value: SurvivorM2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[4]
@@ -47360,7 +47371,7 @@ Prefab:
       objectReference: {fileID: 1154743999}
     - target: {fileID: 11400000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
       propertyPath: appearances.Array.data[6]
-      value: HumanF
+      value: SurvivorF2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b605917afd734344baa5c19fc6b731aa, type: 2}
