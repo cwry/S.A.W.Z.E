@@ -4,9 +4,12 @@ var fast : float;
 var slow : float;
 
 private var _this : TestZombie;
+private var hunting : boolean;
+private var model : GameObject;
 
 function Awake(){
 	_this = gameObject.GetComponent(TestZombie);
+	model = transform.Find("Model").gameObject;
 }
 
 function Update(){
@@ -30,11 +33,19 @@ function Update(){
 			}
 			ray += dir;
 		}
-		if(inSight || (_this.hasException() && (target.x == current.x || target.y == current.y))){
+		if(inSight || (hunting && (target.x == current.x || target.y == current.y))){
 			gameObject.SendMessage("setGoal", target);
 			gameObject.SendMessage("setSpeed", fast);
+			hunting = true;
+			if(model.animation["Walk"].enabled){
+				model.animation.CrossFade("Hunt", 0.2);
+			}
 		}else if(!_this.hasException()){
+			hunting = false;
 			gameObject.SendMessage("setSpeed", slow);
+			if(model.animation["Hunt"].enabled){
+				model.animation.CrossFade("Walk", 0.2);
+			}
 		}
 	}
 }

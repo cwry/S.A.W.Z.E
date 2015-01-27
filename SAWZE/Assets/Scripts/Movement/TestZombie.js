@@ -47,7 +47,7 @@ function setGoalException(bool : boolean){
 
 function Update () { 
 	//NOT DYNAMIC
-	model.animation["Take 001"].speed = speed * 2;
+	model.animation["Walk"].speed = speed * 2;
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	if(done){

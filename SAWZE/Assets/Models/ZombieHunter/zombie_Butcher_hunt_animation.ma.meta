@@ -84,8 +84,9 @@ ModelImporter:
     400076: Spline3
     400078: //RootNode
     4300000: polySurface1_1
-    7400000: Take 001
+    7400000: Hunt
     9500000: //RootNode
+    11100000: //RootNode
     13700000: polySurface1_1
   materials:
     importMaterials: 1
@@ -93,16 +94,122 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Hunt
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: ikHandle3
+        weight: 1
+      - path: ikHandle4
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle6
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Knee
+        weight: 1
+      - path: Pelvis/L_Leg/L_Knee/L_Ankle
+        weight: 1
+      - path: Pelvis/L_Leg/L_Knee/L_Ankle/L_foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Knee/L_Ankle/L_foot/L_toe
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Knee
+        weight: 1
+      - path: Pelvis/R_Leg/R_Knee/R_Ankle
+        weight: 1
+      - path: Pelvis/R_Leg/R_Knee/R_Ankle/R_foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Knee/R_Ankle/R_foot/R_toe
+        weight: 1
+      - path: Pelvis/Spline1
+        weight: 1
+      - path: Pelvis/Spline1/Spline2
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Arm
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Arm/L_elbow
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Arm/L_elbow/L_wrist
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Arm/L_elbow/L_wrist/L_Handbase
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/L_Arm/L_elbow/L_wrist/L_Handbase/L_HandEnd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/Neck
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/Neck/HeadBase
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/Neck/HeadBase/HeadEnd
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Arm
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Arm/R_elbow
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Arm/R_elbow/R_wrist
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Arm/R_elbow/R_wrist/R_Handbase
+        weight: 1
+      - path: Pelvis/Spline1/Spline2/Spline3/R_Arm/R_elbow/R_wrist/R_Handbase/R_HandEnd
+        weight: 1
+      - path: polySurface1_1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -138,6 +245,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
