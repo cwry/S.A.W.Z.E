@@ -1845,7 +1845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   target: {fileID: 0}
-  keepDistance: 1
+  keepDistance: .75
   dir: {x: 0, y: 0}
 --- !u!137 &13776846
 SkinnedMeshRenderer:

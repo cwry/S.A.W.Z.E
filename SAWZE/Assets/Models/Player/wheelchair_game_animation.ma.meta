@@ -58,7 +58,7 @@ ModelImporter:
     4300012: polySurface30
     4300014: polySurface33
     4300016: polySurface34
-    7400000: Take 001
+    7400000: Drive
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -74,9 +74,61 @@ ModelImporter:
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Drive
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Merged_NewWheelchair3_1
+        weight: 1
+      - path: Merged_NewWheelchair3_1/transform1
+        weight: 1
+      - path: Move_CTRL
+        weight: 1
+      - path: Move_CTRL/L_backWheel
+        weight: 1
+      - path: Move_CTRL/L_frontwheel
+        weight: 1
+      - path: Move_CTRL/polySurface30
+        weight: 1
+      - path: Move_CTRL/polySurface32
+        weight: 1
+      - path: Move_CTRL/polySurface33
+        weight: 1
+      - path: Move_CTRL/polySurface34
+        weight: 1
+      - path: Move_CTRL/R_BackWheel
+        weight: 1
+      - path: Move_CTRL/R_frontwheel
+        weight: 1
+      - path: Wheelchair_CTRL
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -96,7 +148,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0

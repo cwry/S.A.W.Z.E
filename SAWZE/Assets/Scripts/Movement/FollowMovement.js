@@ -8,15 +8,22 @@ private var tileMap : TileMap;
 var dir : Vector2;
 private var nextTile : Vector3;
 private var model : GameObject;
+private var maxSpeed : float;
 
 function Start () {
 	tileMap = TileMap._this;
 	nextTile = Vector2(Mathf.Round(gameObject.transform.position.x), Mathf.Round(gameObject.transform.position.y));
 	model = transform.Find("Model").gameObject;
+	maxSpeed = speed;
 }
 
 function Update () { 
 	//NOT DYNAMIC
+	if(PlayerController._this.speed >= maxSpeed){
+		speed = maxSpeed;
+	}else{
+		speed = PlayerController._this.speed;
+	}
 	model.animation["Walk"].speed = speed;
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	

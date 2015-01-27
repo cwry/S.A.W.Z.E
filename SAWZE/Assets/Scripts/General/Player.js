@@ -48,6 +48,7 @@ function gotAntidote(args){
 	//args[1] --> duration
 	var passedT : float = 0;
 	antidoteParticle.Play();
+	Player._this.SendMessage("playBoostAnimation");
 	superAntidote = true;
 	gameObject.SendMessage("addSpeed", args[0]);
 	
