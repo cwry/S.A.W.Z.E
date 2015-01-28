@@ -77,10 +77,50 @@ function Update(){
 	if(oxygen >= 1){
 		oxygen = 1;
 	}else if(oxygen <= 0){
-		LevelHandler.onLoss();
+		lose();
 	}
 }
 
 function LateUpdate(){
 	gotHurt = false;
+}
+
+function lose(){
+	if(gameObject.GetComponent("PlayerController").enabled){
+		Time.timeScale = 0;
+		var activated : float = Time.realtimeSinceStartup; 
+		var passedT : float = 0;
+		gameObject.GetComponent("PlayerController").enabled = false;
+		while(passedT < 1){
+			var now : float = Time.realtimeSinceStartup;
+			var delta : float = now - activated;
+			gameObject.transform.Rotate(Vector3.back * 1000 * delta);
+			gameObject.transform.position.z -= 15 * delta;
+			passedT += delta;
+			activated = now;
+			yield;
+		}
+		Time.timeScale = 1;
+		LevelHandler.onLoss();
+	}
+}
+
+function win(){
+	if(gameObject.GetComponent("PlayerController").enabled){
+		Time.timeScale = 0;
+		var activated : float = Time.realtimeSinceStartup; 
+		var passedT : float = 0;
+		gameObject.GetComponent("PlayerController").enabled = false;
+		while(passedT < 1){
+			var now : float = Time.realtimeSinceStartup;
+			var delta : float = now - activated;
+			gameObject.transform.Rotate(Vector3.back * 1000 * delta);
+			gameObject.transform.position.z -= 15 * delta;
+			passedT += delta;
+			activated = now;
+			yield;
+		}
+		Time.timeScale = 1;
+		LevelHandler.onWin();
+	}
 }

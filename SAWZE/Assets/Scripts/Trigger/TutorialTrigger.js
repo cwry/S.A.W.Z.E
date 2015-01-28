@@ -9,7 +9,7 @@ private var img : UnityEngine.UI.Image;
 
 
 function Awake(){
-	img = message.Find("MessageImage").GetComponent(UnityEngine.UI.Image);
+	img = message.transform.Find("MessageImage").GetComponent(UnityEngine.UI.Image);
 }
 
 function OnTriggerEnter2D(other: Collider2D){

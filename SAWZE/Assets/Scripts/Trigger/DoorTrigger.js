@@ -19,7 +19,7 @@ function trigger(){
 
 function OnTriggerEnter2D(coll : Collider2D){
 	if(open && coll.gameObject.name == "Player"){
-		LevelHandler.onWin();
+		Player._this.SendMessage("win");
 	}
 }
 

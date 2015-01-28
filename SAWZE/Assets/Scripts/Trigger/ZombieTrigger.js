@@ -16,7 +16,7 @@ function OnTriggerEnter2D(other: Collider2D){
 			Player._this.addChain(survivor.transform);
 			Destroy(gameObject);
 		}else{
-			LevelHandler.onLoss();
+			Player._this.SendMessage("lose");
 		}
 	}
 }
