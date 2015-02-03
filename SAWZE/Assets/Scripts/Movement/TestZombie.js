@@ -4,7 +4,10 @@ var speed : float;
 var goals : Vector2[];
 
 private var goalException : boolean;
+private var pathException : boolean;
 private var manualGoal : Vector2;
+private var manualPath : Vector2[];
+private var cancelManually : boolean;
 private var tileMap : TileMap;
 private var dir : Vector2;
 private var nextTile : Vector3;
@@ -22,7 +25,14 @@ function Awake() {
 
 function setGoal(goal : Vector2){
 	goalException = true;
+	pathException = false;
 	manualGoal = goal;
+}
+
+function setPath(path : Vector2[]){
+	goalException = true;
+	pathException = true;
+	manualPath = path;
 }
 
 function setSpeed(amt : float){
@@ -51,12 +61,12 @@ function Update () {
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	if(done){
-		var currGoal = goalException ? manualGoal : goals[goalCount % goals.length]; 
+		var currGoal = goalException ? (pathException ? manualPath[goalCount % manualPath.length] : manualGoal) : goals[goalCount % goals.length]; 
 		var nextDir = tileMap.getNavAt(currGoal.x, currGoal.y, nextTile.x, nextTile.y);
 		if(nextDir == Vector2.zero){
-			goalException = false;
+			goalException = pathException;
 			goalCount++;
-			currGoal = goals[goalCount % goals.length]; 
+			currGoal = goalException ? (pathException ? manualPath[goalCount % manualPath.length] : manualGoal) : goals[goalCount % goals.length];  
 			nextDir = tileMap.getNavAt(currGoal.x, currGoal.y, nextTile.x, nextTile.y);
 		}
 		if(Mathf.Abs(nextDir.x) - Mathf.Abs(dir.x) != 0 || Mathf.Abs(nextDir.y) - Mathf.Abs(dir.y) != 0){

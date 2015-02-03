@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-var rallyingPoint : Vector2;
+var rallyingPath : Vector2[];
 var alarm : GameObject;
 var pressedMesh : Mesh;
 var normalMesh : Mesh;
@@ -20,7 +20,7 @@ function Start(){
 function OnTriggerEnter2D(coll: Collider2D){
 	if(!activated){
 		for(var zombie in GameObject.FindGameObjectsWithTag("Enemy")){
-			zombie.SendMessage("setGoal", rallyingPoint);
+			zombie.SendMessage("setPath", rallyingPath);
 		}
 		activate(duration);
 	}
