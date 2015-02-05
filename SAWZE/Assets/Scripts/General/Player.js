@@ -95,7 +95,7 @@ function lose(){
 			var now : float = Time.realtimeSinceStartup;
 			var delta : float = now - activated;
 			gameObject.transform.Rotate(Vector3.back * 1000 * delta);
-			gameObject.transform.position.z -= 15 * delta;
+			//gameObject.transform.position.z -= 15 * delta;
 			passedT += delta;
 			activated = now;
 			yield;

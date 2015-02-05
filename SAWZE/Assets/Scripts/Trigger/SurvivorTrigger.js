@@ -9,6 +9,7 @@ function OnTriggerEnter2D(coll : Collider2D){
 	 	gameObject.GetComponent(FollowMovement).enabled = true;
 	 	gameObject.GetComponent(FollowMovement).target = Player._this.getLastChain();
 	 	Player._this.addChain(transform);
+	 	gameObject.transform.Find("SurvivorSign").transform.Find("Model").renderer.enabled = false;
 	 	AudioSource.PlayClipAtPoint(sound, transform.position);
 	 }
 }

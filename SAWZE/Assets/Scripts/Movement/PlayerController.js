@@ -3,6 +3,7 @@
 var speed : float;
 var dir : Vector2;
 var nitroParticle : ParticleSystem;
+var bumpSound : AudioClip;
 
 private var tileMap : TileMap;
 private var lastValidInput : Vector2;
@@ -114,6 +115,7 @@ function Update () {
 		if(!bumped && !hero.animation["Bump"].enabled){
 			bumped = true;
 			hero.animation.CrossFade("Bump", 0.2);
+			AudioSource.PlayClipAtPoint(bumpSound, transform.position);
 		}
 	}else{
 		bumped = false;
