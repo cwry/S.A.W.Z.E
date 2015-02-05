@@ -3,6 +3,7 @@
 var contamination : float;
 var oxygen : float = 1;
 var antidoteParticle : ParticleSystem;
+private var hero : GameObject;
 
 private var superAntidote : boolean;
 private var gotHurt : boolean = false;
@@ -14,6 +15,7 @@ function Awake(){
 	_this = this;
 	superAntidote = false;
 	lastChain = transform;
+	hero = transform.Find("HeroModel").gameObject;
 }
 
 function addChain(obj : Transform){
@@ -107,20 +109,21 @@ function lose(){
 
 function win(){
 	if(gameObject.GetComponent("PlayerController").enabled){
-		Time.timeScale = 0;
+		//Time.timeScale = 0.01;
 		var activated : float = Time.realtimeSinceStartup; 
 		var passedT : float = 0;
 		gameObject.GetComponent("PlayerController").enabled = false;
+		hero.animation.CrossFade("Win", 0.2);
 		while(passedT < 1){
 			var now : float = Time.realtimeSinceStartup;
 			var delta : float = now - activated;
-			gameObject.transform.Rotate(Vector3.back * 1000 * delta);
-			gameObject.transform.position.z -= 15 * delta;
+			/*gameObject.transform.Rotate(Vector3.back * 1000 * delta);
+			gameObject.transform.position.z -= 15 * delta;*/
 			passedT += delta;
 			activated = now;
 			yield;
 		}
-		Time.timeScale = 1;
+		//Time.timeScale = 1;
 		LevelHandler.onWin();
 	}
 }

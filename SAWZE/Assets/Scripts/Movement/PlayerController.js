@@ -112,9 +112,9 @@ function Update () {
 	
 	if(dir == Vector2.zero){
 		wheelchair.animation.Stop();
-		if(!bumped && !hero.animation["Bump"].enabled){
+		if(!bumped && !hero.animation["Win"].enabled){
 			bumped = true;
-			hero.animation.CrossFade("Bump", 0.2);
+			hero.animation.CrossFade("Win", 0.2);
 			AudioSource.PlayClipAtPoint(bumpSound, transform.position);
 		}
 	}else{
