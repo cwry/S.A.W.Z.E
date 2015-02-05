@@ -13,7 +13,7 @@ function Update(){
 		for(var t in texts){
 			t.color.a = Mathf.Lerp(t.color.a, 1, Time.deltaTime * 10);
 		}
-		if(Input.GetKeyDown("escape")){
+		if(Input.GetButtonDown("Back")){
 			main.SendMessage("setActive", true);
 			deactivated = true;
 		}

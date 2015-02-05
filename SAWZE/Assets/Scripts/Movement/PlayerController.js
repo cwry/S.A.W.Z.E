@@ -62,8 +62,7 @@ function Update () {
 	//NOT DYNAMIC!!
 	wheelchair.animation["Drive"].speed = speed * 0.5;
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
-	
-	var inputDir : Vector2 = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); 
+	var inputDir : Vector2 = UniversalInput.getInput();
 	if(!inputDir.x ^ !inputDir.y && tileMap.getTileAt(nextTile.x + inputDir.x, nextTile.y + inputDir.y)){
 		lastValidInput = inputDir;
 	}

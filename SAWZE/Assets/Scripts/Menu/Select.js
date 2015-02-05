@@ -25,15 +25,16 @@ function Awake(){
 
 function Update () {
 	if(!deactivated){
-		if(Input.GetAxisRaw("Vertical") == -1 && Time.realtimeSinceStartup - lastSwap >= timeOut && selected < elements.Length - 1){
+		var inputDir : Vector2 = UniversalInput.getInput();
+		if(inputDir.y == -1 && Time.realtimeSinceStartup - lastSwap >= timeOut && selected < elements.Length - 1){
 			lastSwap = Time.realtimeSinceStartup;
 			selected++;
-		}else if(Input.GetAxisRaw("Vertical") == 1 && Time.realtimeSinceStartup - lastSwap >= timeOut && selected > 0){
+		}else if(inputDir.y == 1 && Time.realtimeSinceStartup - lastSwap >= timeOut && selected > 0){
 			lastSwap = Time.realtimeSinceStartup;
 			selected--;
 		}
 		
-		if(Input.GetKeyDown("space") || Input.GetKeyDown("return")){
+		if(Input.GetButtonDown("Submit")){
 			texts[selected].gameObject.SendMessage("run");
 		}
 	
