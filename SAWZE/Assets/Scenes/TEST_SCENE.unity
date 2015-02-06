@@ -8416,7 +8416,6 @@ MonoBehaviour:
   unselectedSize: 50
   timeOut: .200000003
   deactivated: 1
-  mainPanel: {fileID: 0}
 --- !u!114 &270945630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27442,7 +27441,7 @@ Transform:
   m_Children:
   - {fileID: 691197763}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1001 &815874652
 Prefab:
   m_ObjectHideFlags: 0
@@ -38858,7 +38857,7 @@ Transform:
   m_Children:
   - {fileID: 834545987}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1144897822
 GameObject:
   m_ObjectHideFlags: 0
@@ -44803,6 +44802,10 @@ Prefab:
     - target: {fileID: 22495798, guid: c0247b89c3fc0ee4093e8041f810fd17, type: 2}
       propertyPath: m_SizeDelta.y
       value: 49.3294449
+      objectReference: {fileID: 0}
+    - target: {fileID: 22395804, guid: c0247b89c3fc0ee4093e8041f810fd17, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0247b89c3fc0ee4093e8041f810fd17, type: 2}

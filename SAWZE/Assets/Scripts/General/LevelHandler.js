@@ -6,9 +6,15 @@ var levels : String[];
 var lossScreen : String;
 var winScreen : String;
 var current : int = 0;
+var progress : int = 0;
 
 function Awake(){
 	_this = this;
+	if(PlayerPrefs.HasKey("progress")){
+		progress = PlayerPrefs.GetInt("progress");
+	}else{
+		progress = 0;
+	}
 	DontDestroyOnLoad(gameObject);
 }
 
@@ -22,9 +28,11 @@ static function setCurrent(curr : int){
 	}
 }
 
-function Update(){
-	if(Input.GetKeyDown("backspace")){
-		Application.LoadLevel("Menu");
+static function getProgress(){
+	if(_this != null){
+		return _this.progress;
+	}else{
+		return 0;
 	}
 }
 
@@ -32,6 +40,11 @@ static function onWin(){
 	if(_this != null){
 		if(_this.current + 1 < _this.levels.Length){
 			_this.current++;
+			if(_this.current > _this.progress){
+				PlayerPrefs.SetInt("progress", _this.current - 1);
+				_this.progress = _this.current - 1;
+				PlayerPrefs.Save();
+			}
 		}
 		Application.LoadLevel(_this.winScreen);
 	}else{

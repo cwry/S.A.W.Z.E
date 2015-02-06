@@ -10,8 +10,6 @@ var unselectedSize : int;
 var timeOut : float;
 var deactivated : boolean = false;
 
-var mainPanel : RectTransform; 
-
 
 private var texts : UnityEngine.UI.Text[];
 private var selected : int = 0;
@@ -25,9 +23,9 @@ function Awake(){
 }
 
 function Update () {
-	if(Input.GetButtonDown("Cancel")){
+	if(Input.GetButtonDown("Cancel") || Input.GetButtonDown("Back")){
+		canvas.enabled = !canvas.enabled;
 		deactivated = !deactivated;
-		canvas.enabled = !deactivated;
 		if(canvas.enabled){
 			Time.timeScale = 0;
 		}else{
@@ -46,11 +44,6 @@ function Update () {
 		
 		if(Input.GetButtonDown("Submit")){
 			texts[selected].gameObject.SendMessage("run");
-		}
-		if(Input.GetButtonDown("Back")){
-			deactivated = true;
-			canvas.enabled = false;
-			Time.timeScale = 1;
 		}
 	
 	

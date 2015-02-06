@@ -5,6 +5,8 @@ var elements : GameObject[];
 
 var selectedClr : Color;
 var unselectedClr : Color;
+var lockedClr : Color;
+var lockedHalf : Color;
 var halfFadedClr : Color;
 var fadedClr : Color;
 var selectedSize : int;
@@ -42,7 +44,7 @@ function Update () {
 			selected--;
 		}
 		
-		if(Input.GetButtonDown("Submit")){
+		if(Input.GetButtonDown("Submit") && selected <= LevelHandler.getProgress()){
 			texts[selected].gameObject.SendMessage("run");
 		}
 		if(Input.GetButtonDown("Back")){
@@ -56,14 +58,14 @@ function Update () {
 	
 		for(var i = 0; i < elements.length; i++){
 			if(i == selected){
-				texts[i].color = Color.Lerp(texts[i].color, selectedClr, Time.deltaTime * 5);
+				texts[i].color = Color.Lerp(texts[i].color, i <= LevelHandler.getProgress() ? selectedClr : lockedClr, Time.deltaTime * 5);
 				texts[i].fontSize = selectedSize;
 			}else{
 				texts[i].fontSize = unselectedSize;
 				if(Mathf.Abs(i - selected) == 1){
-					texts[i].color = Color.Lerp(texts[i].color, unselectedClr, Time.deltaTime * 10);
+					texts[i].color = Color.Lerp(texts[i].color, i <= LevelHandler.getProgress() ? unselectedClr : lockedClr, Time.deltaTime * 10);
 				}else if(Mathf.Abs(i - selected) == 2){
-					texts[i].color = Color.Lerp(texts[i].color, halfFadedClr, Time.deltaTime * 10);
+					texts[i].color = Color.Lerp(texts[i].color, i <= LevelHandler.getProgress() ? halfFadedClr : lockedHalf, Time.deltaTime * 10);
 				}else{
 					texts[i].color = Color.Lerp(texts[i].color, fadedClr, Time.deltaTime * 20);
 				}
