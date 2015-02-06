@@ -4,7 +4,7 @@ var render : Renderer;
 var model : GameObject;
 
 function Awake(){
-	model.animation["Walk"].speed = 4;
+	model.animation["Walk"].speed = 1.6;
 }
 
 function Update(){
