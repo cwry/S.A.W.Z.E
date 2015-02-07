@@ -12,6 +12,7 @@ private var isSlow : boolean;
 private var wheelchair : GameObject;
 private var hero : GameObject;
 private var bumped : boolean;
+private var special : boolean;
 
 
 function Start () {
@@ -24,6 +25,7 @@ function Start () {
 	wheelchair = transform.Find("WheelChairModel").gameObject;
 	hero = transform.Find("HeroModel").gameObject;
 	bumped = false;
+	special = false;
 }
 
 function speedUpNitro(args){
@@ -123,6 +125,18 @@ function Update () {
 		}
 		if(!hero.animation.isPlaying){
 			hero.animation.CrossFade("Drive", 0.2);
+		}
+		if(Mathf.Round(Time.time) % 100 == Random.Range(parseInt(0), parseInt(100))){
+			var rnd = Random.Range(parseInt(0), parseInt(4));
+			if(rnd == 0){
+				hero.animation.CrossFade("Angry", 0.2);
+			}else if(rnd == 1){
+				hero.animation.CrossFade("Follow", 0.2);
+			}else if(rnd == 2){
+				hero.animation.CrossFade("Salute", 0.2);
+			}else if(rnd == 3){
+				hero.animation.CrossFade("Scratch", 0.2);
+			}
 		}
 	}
 	

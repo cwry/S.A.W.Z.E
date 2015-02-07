@@ -58,6 +58,21 @@ function setGoalException(bool : boolean){
 function Update () { 
 	//NOT DYNAMIC
 	model.animation["Walk"].speed = speed * 0.8;
+	if(gameObject.GetComponent("HunterZombieExtension") == null){
+		model.animation["Humpel"].speed = speed * 0.8;
+
+		if(Mathf.Round(Time.time) % 100 == Random.Range(parseInt(0), parseInt(100))){
+			var rnd = Random.Range(parseInt(0), parseInt(4));
+			if(rnd == 0){
+				model.animation.CrossFade("Humpel", 0.2);
+			}else if(rnd == 1){
+				model.animation.CrossFade("Stumble", 0.2);
+			}
+		}else if(!model.animation.isPlaying){
+			model.animation.CrossFade("Walk", 0.2);
+		}
+	}
+
 	var done = MovementUtil.isDone(gameObject, dir, nextTile);
 	
 	if(done){
