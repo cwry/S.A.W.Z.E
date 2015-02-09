@@ -55,6 +55,10 @@ function setGoalException(bool : boolean){
 	goalException = bool;
 }
 
+function setPathException(bool : boolean){
+	pathException = bool;
+}
+
 function Update () { 
 	//NOT DYNAMIC
 	model.animation["Walk"].speed = speed * 0.8;

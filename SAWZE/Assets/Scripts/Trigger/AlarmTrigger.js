@@ -46,5 +46,6 @@ function deactivate(){
 	model.renderer.material = normalMat;
 	for(var zombie in GameObject.FindGameObjectsWithTag("Enemy")){
 		zombie.SendMessage("setGoalException", false);
+		zombie.SendMessage("setPathException", false);
 	}
 }
