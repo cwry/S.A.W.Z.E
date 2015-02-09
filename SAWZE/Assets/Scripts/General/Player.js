@@ -3,6 +3,8 @@
 var contamination : float;
 var oxygen : float = 1;
 var antidoteParticle : ParticleSystem;
+var music : AudioSource;
+var saa : AudioSource;
 private var hero : GameObject;
 
 private var superAntidote : boolean;
@@ -49,6 +51,8 @@ function gotAntidote(args){
 	//args[0] --> speed
 	//args[1] --> duration
 	var passedT : float = 0;
+	music.Pause();
+	saa.Play();
 	antidoteParticle.Play();
 	Player._this.SendMessage("playBoostAnimation");
 	superAntidote = true;
@@ -58,7 +62,8 @@ function gotAntidote(args){
 		passedT += Time.deltaTime;
 		yield;
 	}
-	
+	saa.Pause();
+	music.Play();
 	gameObject.SendMessage("addSpeed", -args[0]);
 	superAntidote = false;
 	antidoteParticle.Stop();

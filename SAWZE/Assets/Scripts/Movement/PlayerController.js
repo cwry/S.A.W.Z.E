@@ -4,6 +4,7 @@ var speed : float;
 var dir : Vector2;
 var nitroParticle : ParticleSystem;
 var bumpSound : AudioClip;
+var slowsrc : AudioSource;
 
 private var tileMap : TileMap;
 private var lastValidInput : Vector2;
@@ -56,6 +57,11 @@ function isOnSlow(){
 }
 
 function setSlow(bool : boolean){
+	if(bool){
+		slowsrc.Play();
+	}else{
+		slowsrc.Pause();
+	}
 	isSlow = bool;
 }
 

@@ -46,6 +46,7 @@ GameObject:
   - 114: {fileID: 11487708}
   - 114: {fileID: 11487710}
   - 50: {fileID: 5087710}
+  - 114: {fileID: 11433058}
   m_Layer: 0
   m_Name: SurvivorCat
   m_TagString: Cat
@@ -1583,6 +1584,18 @@ MonoBehaviour:
   amt: .25
   speed: 2
   rotSpeed: 60
+--- !u!114 &11433058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d851dc1d5a94cb9682542e55322f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: e480886261196b34c9599a9975cb3618, type: 3}
 --- !u!114 &11487708
 MonoBehaviour:
   m_ObjectHideFlags: 1
