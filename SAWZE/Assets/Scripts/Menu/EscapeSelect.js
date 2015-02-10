@@ -32,6 +32,9 @@ function Update () {
 			Time.timeScale = 1;
 		}
 	}
+	if(!canvas.enabled){
+		deactivated = true;
+	}
 	if(!deactivated){
 		var inputDir : Vector2 = UniversalInput.getInput();
 		if(inputDir.y == -1 && Time.realtimeSinceStartup - lastSwap >= timeOut && selected < elements.Length - 1){
