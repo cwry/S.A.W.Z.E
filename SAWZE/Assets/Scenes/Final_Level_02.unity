@@ -115387,6 +115387,14 @@ Prefab:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2f662f7506ee6ba43adc2115621f3ca0, type: 2}
+      propertyPath: goals.Array.data[3].x
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2f662f7506ee6ba43adc2115621f3ca0, type: 2}
+      propertyPath: goals.Array.data[3].y
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f662f7506ee6ba43adc2115621f3ca0, type: 2}
   m_RootGameObject: {fileID: 2010434949}
@@ -122802,7 +122810,7 @@ MonoBehaviour:
   - {x: 26, y: 9}
   - {x: 23, y: 14}
   - {x: 20, y: 10}
-  - {x: 2, y: 3}
+  - {x: 24, y: 11}
 --- !u!61 &2010434954
 BoxCollider2D:
   m_ObjectHideFlags: 0
